@@ -50,7 +50,7 @@ public class TestEmpMapper {
 
     @Test
     public void insert(){
-        int n = empMapper.insert(new Emp(7812,"Curry","PRESIDENT",7839,new Date(2021-5-25),1300.0,500.0,10));
+        int n = empMapper.insert(new Emp(7812,"Curry","PRESIDENT",7839,new Date(),1300.0,500.0,10));
         System.out.println(n);
 
         sqlSession.commit();
