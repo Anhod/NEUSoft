@@ -20,4 +20,7 @@ public interface EmpMapper {
 
     // 删除操作
     int deleteById(int empno);
+
+    // 动态选择字段进行排序
+    List<Emp> order(String column);
 }

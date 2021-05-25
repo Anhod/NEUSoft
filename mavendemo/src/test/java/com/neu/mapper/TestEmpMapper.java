@@ -72,7 +72,12 @@ public class TestEmpMapper {
         sqlSession.commit();
     }
 
-
+    @Test
+    public void order(){
+        List<Emp> list = empMapper.order("sal");
+        for (int i = 0;i<list.size();i++)
+            System.out.println(list.get(i));
+    }
     @After
     public void end(){
         // 关闭会话
