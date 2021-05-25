@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neu.mapper.DeptMapper">
+    <select id="getById" resultType="com.neu.po.Dept">
+        SELECT * FROM Dept where deptno = #{deptno}
+    </select>
+
+    <select id="getAll" resultType="com.neu.po.Dept">
+        select * from dept;
+    </select>
+
+    <insert id="insert">
+        insert into dept(deptno, dname, loc) values (#{deptno},#{dname},#{loc})
+    </insert>
+
+    <update id="updateLocById">
+        update dept set loc = #{loc} where deptno = #{deptno}
+    </update>
+
+    <delete id="deleteById">
+        delete from dept where deptno = #{deptno}
+    </delete>
+
+<!--    这儿不能直接写dname、loc，而是用arg0、arg1代替，或者param1、param2代替-->
+    <select id="find" resultType="com.neu.po.Dept">
+        select * from dept where dname = #{dname} and loc = #{loc}
+    </select>
+
+    <select id="find2" resultType="com.neu.po.Dept">
+        select * from dept where dname = #{dname} and loc = #{loc}
+    </select>
+
+    <select id="find3" resultType="com.neu.po.Dept">
+        select * from dept where dname = #{dname} and loc = #{loc}
+    </select>
+
+    <update id="updateDnameById">
+        update dept set dname = #{dname} where deptno = #{deptno}
+    </update>
+
+
+    <!--
+        ${}根据列名进行排序，动态列名
+        #{}固定参数，不动态
+    -->
+    <select id="getAllByOrderDname" resultType="com.neu.po.Dept">
+        select * FROM dept ORDER BY ${columnName} ASC
+    </select>
+
+
+
+<!--    记得加上单引号，表示dname的一个值，模糊查询，在sql直接写这条语句的时候，是需要加单引号的-->
+    <select id="getByDname" resultType="com.neu.po.Dept">
+        select * from dept where dname like '%${dname}%'
+    </select>
+
+    <select id="getByDname2" resultType="com.neu.po.Dept">
+        select * from dept where dname like #{dname}
+    </select>
+</mapper>
