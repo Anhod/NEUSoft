@@ -26,4 +26,7 @@ public interface EmpMapper {
 
     // 根据id返回Emp对象，同时还有Dept对象
     Emp getByIdWithDept(int empno);
+
+    // 根据部门编号，查询出该部门的所有员工
+    List<Emp> getEmpsByDeptno(int deptno);
 }

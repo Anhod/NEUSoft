@@ -1,6 +1,7 @@
 package com.neu.mapper;
 
 import com.neu.po.Dept;
+import com.neu.po.Emp;
 import org.apache.ibatis.annotations.Param;
 
 import javax.xml.crypto.Data;

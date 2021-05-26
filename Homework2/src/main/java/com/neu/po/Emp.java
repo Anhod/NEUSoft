@@ -19,17 +19,4 @@ public class Emp {
     private Double sal;      // 薪水
     private Double comm;     // 奖金
     private Integer deptno;  // 部门编号
-
-    private Dept dept;  // 所属部门的部门对象
-
-    public Emp(Integer empno, String ename, String job, Integer mgr, Date hiredate, Double sal, Double comm, Integer deptno) {
-        this.empno = empno;
-        this.ename = ename;
-        this.job = job;
-        this.mgr = mgr;
-        this.hiredate = hiredate;
-        this.sal = sal;
-        this.comm = comm;
-        this.deptno = deptno;
-    }
 }

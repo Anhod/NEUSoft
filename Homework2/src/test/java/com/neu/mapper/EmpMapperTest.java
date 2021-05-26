@@ -11,10 +11,12 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.List;
 
-public class TestEmpMapper {
+public class EmpMapperTest {
     private EmpMapper empMapper;
     private SqlSession sqlSession;
 
@@ -34,60 +36,57 @@ public class TestEmpMapper {
         empMapper = sqlSession.getMapper(EmpMapper.class);
     }
 
-    // 查询全部
+    // 动态查询
     @Test
-    public void findAll(){
-        List<Emp> emps = empMapper.findAll();
+    public void search(){
+        List<Emp> emps = empMapper.search(new Emp(7369,null,null,null,null,null,null,null));
         for (int i=0;i<emps.size();i++)
             System.out.println(emps.get(i));
     }
 
-    // 根据Id进行查询
-    @Test
-    public void getById(){
-        Emp emp = empMapper.getById(7369);
-        System.out.println(emp);
-    }
-
-    // 插入记录
+    // 动态插入
     @Test
     public void insert(){
-        int n = empMapper.insert(new Emp(7812,"Curry","PRESIDENT",7839,new Date(),1300.0,500.0,10));
+        int n = empMapper.insert(new Emp(4444,null,null,0,null,800.0,0.0,10));
+        System.out.println(n);
+        sqlSession.commit();
+    }
+
+    // 有选择的更新
+    @Test
+    public void update(){
+        int n = empMapper.update(new Emp(7812,null,null,null,null,1412.0,null,null));
         System.out.println(n);
 
         sqlSession.commit();
     }
 
-    // 根据Id更新工资
+    // 批量添加
     @Test
-    public void updateSalById(){
-        int n = empMapper.updateSalById(7812,1400);
+    public void insertBatch() throws ParseException {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        List<Emp> emps = new ArrayList<>();
+        emps.add(new Emp(1234,"Stephen","Salesman",7722,format.parse("2021-3-12"),700.0,null,20));
+        emps.add(new Emp(4321,"July","President",7812,format.parse("2020-4-22"),700.0,null,20));
+
+        int n = empMapper.insertBatch(emps);
         System.out.println(n);
 
         sqlSession.commit();
+
+
     }
 
-    // 根据Id进行删除
+    // 批量删除
     @Test
-    public void  deleteById(){
-        int n = empMapper.deleteById(7812);
-        System.out.println(n);
+    public void deleteBatch(){
+        int[] ids = new int[]{1234,4321};
+        int n = empMapper.deleteBatch(ids);
 
+        System.out.println(n);
         sqlSession.commit();
     }
 
-    @Test
-    public void order(){
-        List<Emp> list = empMapper.order("sal");
-        for (int i = 0;i<list.size();i++)
-            System.out.println(list.get(i));
-    }
-
-    @Test
-    public void getByIdWithDept(){
-        Emp emp = empMapper.getByIdWithDept(7369);
-        System.out.println(emp.getDept());
-    }
     @After
     public void end(){
         // 关闭会话

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.neu.mapper.EmpMapper">
 
-
+<!--基础操作-->
     <select id="findAll" resultType="com.neu.po.Emp">
         select * from emp
     </select>
@@ -27,13 +27,20 @@
         select * from emp order by ${column} DESC
     </select>
 
+
+    <!--    关联对象，根据员工的部门编号封装一个部门对象-->
+    <!--    property:是Emp对象中需要映射的属性-->
+    <!--    column：根据deptno进行映射（获得的Emp对象的deptno属性）-->
+    <!--    select：映射方法-->
     <resultMap id="basicMap" type="com.neu.po.Emp">
-        <!--        关联对象，根据部门编号封装一个部门对象-->
-        <!--        用一个方法做映射-->
         <association property="dept" column="deptno" select="com.neu.mapper.DeptMapper.getById"></association>
     </resultMap>
-
     <select id="getByIdWithDept" resultMap="basicMap">
         select * from emp where empno = #{empno}
+    </select>
+
+<!--    根据部门编号获得所有员工-->
+    <select id="getEmpsByDeptno" resultType="com.neu.po.Emp">
+        select * from emp where deptno=#{deptno}
     </select>
 </mapper>

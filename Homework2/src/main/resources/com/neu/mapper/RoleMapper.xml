@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neu.mapper.RoleMapper" >
+
+<!--    给定role查看有多少user（多少用户属于这种角色）-->
+<!--    type：表示下面的getById方法返回的类型-->
+<!--    id：将role中的属性映射到数据库-->
+<!--    collection：映射到集合-->
+<!--    然后根据roleId（属于role），利用select中的方法，赋给myUsers属性-->
+    <resultMap id="basicMap" type="com.neu.po.Role">
+        <id property="roleId" column="roleId"></id>
+        <collection property="myUsers" column="roleId" select="com.neu.mapper.MyUserMapper.getByRoleId"></collection>
+    </resultMap>
+    <select id="getAllUserById" resultMap="basicMap">
+        select * from role where  roleId= #{roleId}
+    </select>
+
+    <select id="getById" resultType="com.neu.po.Role">
+        select * from role where roleId = #{roleId}
+    </select>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neu.mapper.MyUserMapper">
+<!--    根据roleId进行查询-->
+    <select id="getByRoleId" resultType="com.neu.po.MyUser">
+        select * from myuser where uRoleId = #{uRoleId}
+    </select>
+
+
+    <!--    根据MyUser的编号获得它其中的Role对象，需要和Role对象进行关联   -->
+    <!--    type取决于下面的select返回的对象   -->
+    <!--    association中，根据column字段（属于user），利用select中的方法查询，查询的结果赋给property属性    -->
+    <resultMap id="basicMap" type="com.neu.po.MyUser">
+        <association property="role" column="uRoleId" select="com.neu.mapper.RoleMapper.getById"></association>
+    </resultMap>
+    <select id="getRoleByMyUser" resultMap="basicMap">
+        select * from myuser where userId = #{userId}
+    </select>
+
+</mapper>

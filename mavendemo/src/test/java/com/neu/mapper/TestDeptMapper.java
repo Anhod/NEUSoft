@@ -42,6 +42,7 @@ public class TestDeptMapper {
     public void testGetById() throws IOException {
         Dept dept = deptMapper.getById(10);
         System.out.println(dept);
+        System.out.println(dept.getEmps());
     }
 
     // 得到全部记录
