@@ -22,6 +22,6 @@
     </delete>
 
     <select id="order" resultType="com.neu.po.Emp">
-        select * from emp order by ${column} DESC 
+        select * from emp order by ${column} DESC
     </select>
 </mapper>

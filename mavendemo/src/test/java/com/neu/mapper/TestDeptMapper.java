@@ -133,6 +133,14 @@ public class TestDeptMapper {
         for (int i=0;i<depts.size();i++)
             System.out.println(depts.get(i));
     }
+
+    @Test
+    public void search(){
+        List<Dept> depts = deptMapper.search3(new Dept(100,null,null));
+        for (int i=0;i<depts.size();i++)
+            System.out.println(depts.get(i));
+    }
+
     @After
     public void end(){
         // 关闭会话

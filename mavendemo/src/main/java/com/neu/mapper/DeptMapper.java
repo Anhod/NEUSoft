@@ -3,6 +3,7 @@ package com.neu.mapper;
 import com.neu.po.Dept;
 import org.apache.ibatis.annotations.Param;
 
+import javax.xml.crypto.Data;
 import java.util.List;
 import java.util.Map;
 
@@ -30,7 +31,7 @@ public interface DeptMapper {
     // 2.使用实体类封装多个参数
     List<Dept> find2(Dept dept);
 
-    // 3.使用map
+    // 3.使用map，慎用
     List<Dept> find3(Map<String,String> map);
 
     int updateDnameById(@Param("deptno") int deptno,@Param("dname") String dname);
@@ -45,4 +46,14 @@ public interface DeptMapper {
 
     // 根据dname进行模糊查询，#{}
     List<Dept> getByDname2(String dname);
+
+    // ---------------------------------------------------第二天的内容---------------------------------------------------
+    // 动态sql,if语句
+    List<Dept> search(Dept dept);
+
+    // 动态sql，trim标签
+    List<Dept> search2(Dept dept);
+
+    // 动态sql，where标签
+    List<Dept> search3(Dept dept);
 }
