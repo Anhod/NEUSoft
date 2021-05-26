@@ -9,6 +9,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class Emp {
     private Integer empno;   // 编号
     private String ename;    // 姓名
@@ -18,4 +19,17 @@ public class Emp {
     private Double sal;      // 薪水
     private Double comm;     // 奖金
     private Integer deptno;  // 部门编号
+
+    private Dept dept;
+
+    public Emp(Integer empno, String ename, String job, Integer mgr, Date hiredate, Double sal, Double comm, Integer deptno) {
+        this.empno = empno;
+        this.ename = ename;
+        this.job = job;
+        this.mgr = mgr;
+        this.hiredate = hiredate;
+        this.sal = sal;
+        this.comm = comm;
+        this.deptno = deptno;
+    }
 }

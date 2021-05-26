@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.neu.mapper.DeptMapper">
+<!--    引用了下边定义了的sql片段-->
     <select id="getById" resultType="com.neu.po.Dept">
-        SELECT * FROM Dept where deptno = #{deptno}
+        <include refid="select1"></include> where deptno = #{deptno}
     </select>
 
     <select id="getAll" resultType="com.neu.po.Dept">
@@ -47,8 +48,6 @@
         select * FROM dept ORDER BY ${columnName} ASC
     </select>
 
-
-
 <!--    记得加上单引号，表示dname的一个值，模糊查询，在sql直接写这条语句的时候，是需要加单引号的-->
     <select id="getByDname" resultType="com.neu.po.Dept">
         select * from dept where dname like '%${dname}%'
@@ -87,5 +86,58 @@
             <if test="dname != null">and dname = #{dname}</if>
             <if test="loc != null"> and loc = #{loc}</if>
         </where>
+    </select>
+
+<!--    set标签帮我们决定在哪添加逗号-->
+    <update id="updateLocal">
+        update dept
+            <set>
+                <if test="dname != null">dname = #{dname}</if>
+                <if test="loc != null">loc = #{loc}</if>
+            </set>
+            where deptno = #{deptno}
+    </update>
+
+<!--    item：是个变量，可以随意起名;open、close:在前面、后面加括号（因为在原始的sql语句中是有括号的）-->
+<!--    separator：分隔符-->
+<!--    collection：可以是array 也可以是 list-->
+    <delete id="deleteBatch">
+        delete from dept where deptno in
+        <foreach collection="array" item="deptno" open="(" close=")" separator=",">
+            #{deptno}
+        </foreach>
+    </delete>
+
+<!--    批量添加操作-->
+<!--    传入的是list，list中的元素是Dept对象，所以在循环体里面是需要给出具体属性的-->
+    <insert id="insertBatch">
+        insert into dept(deptno, dname, loc) values
+            <foreach collection="list" separator="," item="dept">
+                (#{dept.deptno},#{dept.dname},#{dept.loc})
+            </foreach>
+    </insert>
+
+
+<!--    sql片段-->
+    <sql id="select1">
+        select * from dept
+    </sql>
+
+<!--    指定返回类型-->
+    <select id="getDnameById" resultType="string">
+        select dname from dept where deptno = #{deptno}
+    </select>
+
+    <select id="getNumOfDept" resultType="int">
+        select count(deptno) from dept
+    </select>
+
+    <select id="exist" resultType="boolean">
+        select count(*) from dept where dname = #{dname}
+    </select>
+
+    <select id="paged" resultType="com.neu.po.Dept">
+        select * from dept order by deptno
+        limit ${(pageNum-1)*pageSize},#{pageSize}
     </select>
 </mapper>

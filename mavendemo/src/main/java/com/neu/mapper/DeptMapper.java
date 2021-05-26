@@ -48,7 +48,7 @@ public interface DeptMapper {
     List<Dept> getByDname2(String dname);
 
     // ---------------------------------------------------第二天的内容---------------------------------------------------
-    // 动态sql,if语句
+    // 动态sql,if语句，动态传入值，动态进行查询
     List<Dept> search(Dept dept);
 
     // 动态sql，trim标签
@@ -56,4 +56,26 @@ public interface DeptMapper {
 
     // 动态sql，where标签
     List<Dept> search3(Dept dept);
+
+    // 部分更新，如果某个属性值为空，那么就不更新该字段
+    int updateLocal(Dept dept);
+
+    // 批量删除，删除多个部门
+    int deleteBatch(int[] deptnos);
+
+    // 批量添加
+    int insertBatch(List<Dept> list);
+
+    // 自指定返回类型
+    // 根据部门编号查询部门名
+    String getDnameById(int deptno);
+
+    // 得到部门个数
+    int getNumOfDept();
+
+    // 查询某部门是否存在
+    boolean exist(String dname);
+
+    // 分页,pageNum为页数，从1开始，pageSize为每一页最多多少行
+    List<Dept> paged(@Param("pageNum") int pageNum,@Param("pageSize") int pageSize);
 }

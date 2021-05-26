@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.neu.mapper.EmpMapper">
+
+
     <select id="findAll" resultType="com.neu.po.Emp">
         select * from emp
     </select>
@@ -23,5 +25,15 @@
 
     <select id="order" resultType="com.neu.po.Emp">
         select * from emp order by ${column} DESC
+    </select>
+
+    <resultMap id="basicMap" type="com.neu.po.Emp">
+        <!--        关联对象，根据部门编号封装一个部门对象-->
+        <!--        用一个方法做映射-->
+        <association property="dept" column="deptno" select="com.neu.mapper.DeptMapper.getById"></association>
+    </resultMap>
+
+    <select id="getByIdWithDept" resultMap="basicMap">
+        select * from emp where empno = #{empno}
     </select>
 </mapper>

@@ -23,4 +23,7 @@ public interface EmpMapper {
 
     // 动态选择字段进行排序
     List<Emp> order(String column);
+
+    // 根据id返回Emp对象，同时还有Dept对象
+    Emp getByIdWithDept(int empno);
 }

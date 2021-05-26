@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neu.mapper.UserInfoMapper" >
+<!--    type：映射后的实体类型-->
+    <resultMap id="basicMap" type="com.neu.po.UserInfo">
+        <id column="id" property="id"></id>
+        <id column="userName" property="userName1"></id>
+        <id column="password" property="password"></id>
+    </resultMap>
+
+<!--    该表的id是自增长的，想使用自增长的功能，并且插入后返回该插入的主键值-->
+<!--    order：决定查询语句执行的先后，after表示先执行插入语句，后执行查询主键的语句；before：先执行查询，生成主键值，再把生成的主键值带到插入语句中，（oracle，序列）-->
+<!--    keyProperty：查询得到的主键值放在形参的哪个属性中（数据库字段）-->
+<!--    resultType：我们想要keyProperty收到的值转换为什么样类型的值-->
+    <insert id="insert">
+        <selectKey order="AFTER" keyProperty="id" resultType="int">
+            select last_insert_id()
+        </selectKey>
+        insert into userInfo(userName,password) values (#{userName},#{password})
+    </insert>
+
+<!--    1.给数据库的字段起别名，数据库返回的UserInfo对象中，字段名字和属性名字会自动去进行映射-->
+    <select id="getById" resultType="com.neu.po.UserInfo">
+        select id,userName userName1,password  from userinfo where id = #{id}
+    </select>
+
+    <select id="getById1" resultMap="basicMap">
+        select id,userName,password from userinfo where id = #{id};
+    </select>
+</mapper>

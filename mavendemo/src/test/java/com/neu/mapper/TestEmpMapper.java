@@ -78,6 +78,12 @@ public class TestEmpMapper {
         for (int i = 0;i<list.size();i++)
             System.out.println(list.get(i));
     }
+
+    @Test
+    public void getByIdWithDept(){
+        Emp emp = empMapper.getByIdWithDept(7369);
+        System.out.println(emp.getDept());
+    }
     @After
     public void end(){
         // 关闭会话

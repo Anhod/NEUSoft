@@ -12,6 +12,7 @@ import org.apache.ibatis.io.Resources;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -54,7 +55,7 @@ public class TestDeptMapper {
     // 插入记录
     @Test
     public void insert(){
-        int n = deptMapper.insert(new Dept(55,"hr","shenyang"));
+        int n = deptMapper.insert(new Dept(56,"water","beijing"));
         System.out.println(n);
 
         // 增删改操作需要提交，查询直接提交了
@@ -134,13 +135,69 @@ public class TestDeptMapper {
             System.out.println(depts.get(i));
     }
 
+
+    //------------------------------------------------第二天的内容------------------------------------------------
     @Test
+    // 动态根据条件查询
     public void search(){
         List<Dept> depts = deptMapper.search3(new Dept(100,null,null));
         for (int i=0;i<depts.size();i++)
             System.out.println(depts.get(i));
     }
 
+    // 局部字段更新
+    @Test
+    public void updateLocal(){
+        int n = deptMapper.updateLocal(new Dept(20,"XiaoMi",null));
+        sqlSession.commit();
+        System.out.println(n);
+    }
+
+    // 批量删除
+    @Test
+    public void deleteBatch(){
+        deptMapper.deleteBatch(new int[]{55,56});
+        sqlSession.commit();
+    }
+
+    // 批量插入
+    @Test
+    public void insertBatch(){
+        List<Dept> depts = new ArrayList<>();
+        depts.add(new Dept(55,"hr","shenyang"));
+        depts.add(new Dept(56,"water","beijing"));
+        int n = deptMapper.insertBatch(depts);
+        System.out.println(n);
+
+        sqlSession.commit();
+    }
+
+    // 根据部门编号得到部门名
+    @Test
+    public void getDnameById(){
+        String dname = deptMapper.getDnameById(10);
+        System.out.println(dname);
+    }
+
+    // 得到部门数量
+    @Test
+    public void getNumOfDept(){
+        int n = deptMapper.getNumOfDept();
+        System.out.println(n);
+    }
+
+    @Test
+    public void exist(){
+        boolean exist = deptMapper.exist("XiaoMi");
+        System.out.println(exist);
+    }
+
+    @Test
+    public void paged(){
+        List<Dept> depts = deptMapper.paged(2,3);
+        for (int i=0;i<depts.size();i++)
+            System.out.println(depts.get(i));
+    }
     @After
     public void end(){
         // 关闭会话
