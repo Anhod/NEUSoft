@@ -4,6 +4,17 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+<!--    类型别名-->
+    <typeAliases>
+<!--        <typeAlias type="com.neu.po.Dept" alias="dept"></typeAlias>-->
+        <package name="com.neu.po"/>  <!-- 设置之后，直接使用该包下的类名即可 -->
+    </typeAliases>
+
+<!--    这儿的位置是有顺序要求的-->
+    <typeHandlers>
+        <package name="com.neu.typeHandler"/>
+    </typeHandlers>
+
     <!-- 配置一个环境，一个环境对应着一个数据库，default为某一个环境的id -->
     <environments default="mysql">
         <environment id="mysql">

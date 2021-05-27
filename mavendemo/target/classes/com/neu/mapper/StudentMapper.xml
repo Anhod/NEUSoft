@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neu.mapper.StudentMapper" >
+    <insert id="insert">
+        insert into student values (
+                #{sid},
+                #{sname},
+<!--                #{sname,javaType=String,jdbcType=VARCHAR,typeHandler=StringTypeHandler},-->
+                #{sage},
+                #{interests,typeHandler=com.neu.typeHandler.StringArrayTypeHandler})
+    </insert>
+
+    <select id="getById" resultType="com.neu.po.Student">
+        select * from student where sid = #{sid}
+    </select>
+
+    <update id="update">
+        update student
+        <set>
+            <if test="sname != null">sname = #{sname},</if>
+            <if test="sage != -1">sage = #{sage},</if>
+            <if test="interests != null">interests = #{interests},</if>
+        </set>
+        where sid = #{sid}
+    </update>
+</mapper>

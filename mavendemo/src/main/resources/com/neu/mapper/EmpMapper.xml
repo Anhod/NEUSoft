@@ -39,8 +39,34 @@
         select * from emp where empno = #{empno}
     </select>
 
-<!--    根据部门编号获得所有员工-->
+<!--    根据部门编号查询所有员工记录-->
     <select id="getEmpsByDeptno" resultType="com.neu.po.Emp">
         select * from emp where deptno=#{deptno}
+    </select>
+
+
+<!--    第三天-->
+<!--    给定员工，获得他所在的部门对象-->
+<!--    关联对象-->
+    <resultMap id="deptMap" type="com.neu.po.Emp">
+        <id property="empno" column="empno"></id>
+        <id property="ename" column="ename"></id>
+        <id property="job" column="job"></id>
+        <id property="mgr" column="mor"></id>
+        <id property="hiredate" column="hiredate"></id>
+        <id property="sal" column="sal"></id>
+        <id property="comm" column="comm"></id>
+        <id property="deptno" column="deptno"></id>
+        <association property="dept" javaType="com.neu.po.Dept">
+            <id property="deptno" column="deptno"></id>
+            <id property="dname" column="dname"></id>
+            <id property="loc" column="loc"></id>
+        </association>
+    </resultMap>
+    <select id="getDeptObjectById" resultMap="deptMap">
+        select e.*,d.dname,d.loc
+        from emp e left join dept d
+            on e.deptno = d.deptno
+        where e.empno = #{empno}
     </select>
 </mapper>

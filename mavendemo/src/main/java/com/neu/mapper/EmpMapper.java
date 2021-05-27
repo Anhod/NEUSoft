@@ -29,4 +29,8 @@ public interface EmpMapper {
 
     // 根据部门编号，查询出该部门的所有员工
     List<Emp> getEmpsByDeptno(int deptno);
+
+    // ----------------------------------------------第三天的内容----------------------------------------------
+    // 给定员工id，获得它所在的部门对象
+    Emp getDeptObjectById(int empno);
 }

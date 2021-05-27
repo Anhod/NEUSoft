@@ -83,7 +83,7 @@ public class TestDeptMapper {
 
     @Test
     public void find( ){
-        List<Dept> list = deptMapper.find("OPERATIONS","BOSTON");
+        List<Dept> list = deptMapper.find("Xiaomi","Shenzhen");
         System.out.println(list);
     }
 
@@ -149,7 +149,7 @@ public class TestDeptMapper {
     // 局部字段更新
     @Test
     public void updateLocal(){
-        int n = deptMapper.updateLocal(new Dept(20,"XiaoMi",null));
+        int n = deptMapper.updateLocal(new Dept(20,"XiaoMi","Shenzhen"));
         sqlSession.commit();
         System.out.println(n);
     }
@@ -199,6 +199,25 @@ public class TestDeptMapper {
         for (int i=0;i<depts.size();i++)
             System.out.println(depts.get(i));
     }
+
+    // ---------------------------------------------第三天---------------------------------------------
+    // 根据一条查询语句查出部门下有的员工对象
+    @Test
+    public void getEmpByDeptId(){
+        Dept dept = deptMapper.getEmpByDeptId(10);
+        System.out.println(dept);
+
+        for (int i=0;i<dept.getEmps().size();i++)
+            System.out.println(dept.getEmps().get(i));
+    }
+
+    @Test
+    // 报表
+    public void report(){
+        List<Map<String,Object>> map = deptMapper.report();
+        System.out.println(map);
+    }
+
     @After
     public void end(){
         // 关闭会话

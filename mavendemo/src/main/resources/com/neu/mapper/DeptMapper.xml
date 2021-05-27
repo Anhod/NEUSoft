@@ -3,16 +3,17 @@
 <mapper namespace="com.neu.mapper.DeptMapper">
 
     <!--    关联集合，根据部门编号查出部门员工-->
+    <!--    引用了下边定义了的sql片段-->
+    <!-- basicMap是映射，根据部门编号查询出所有的员工，首先需要在Dept里面加上一个list，存储员工   -->
+    <!--    下边的id映射是映射Dept的deptno字段和属性-->
     <resultMap id="basicMap" type="com.neu.po.Dept">
         <id property="deptno" column="deptno"></id>
         <collection property="emps" column="deptno" select="com.neu.mapper.EmpMapper.getEmpsByDeptno"></collection>
     </resultMap>
-
-    <!--    引用了下边定义了的sql片段-->
-    <!-- basicMap是映射，根据部门编号查询出所有的员工，首先需要在Dept里面加上一个list，存储员工   -->
     <select id="getById" resultMap="basicMap">
         <include refid="select1"></include> where deptno = #{deptno}
     </select>
+
 
     <select id="getAll" resultType="com.neu.po.Dept">
         select * from dept;
@@ -100,8 +101,8 @@
     <update id="updateLocal">
         update dept
             <set>
-                <if test="dname != null">dname = #{dname}</if>
-                <if test="loc != null">loc = #{loc}</if>
+                <if test="dname != null">dname = #{dname},</if>
+                <if test="loc != null">loc = #{loc},</if>
             </set>
             where deptno = #{deptno}
     </update>
@@ -150,4 +151,37 @@
     </select>
 
 
+<!--    第三天-->
+<!--    根据一条查询语句查出部门下有的员工对象-->
+<!--    注意下边是用 ofType-->
+<!--    并且都要进行映射(对查询返回的结果进行映射,mybatis不会自动去映射)-->
+    <resultMap id="empMap" type="com.neu.po.Dept">
+        <id property="deptno" column="deptno"></id>
+        <result property="dname" column="dname"></result>
+        <result property="loc" column="loc"></result>
+        <collection property="emps" ofType="com.neu.po.Emp">
+            <id column="empno" property="empno"></id>
+            <result column="job" property="job"/>
+            <result column="mgr" property="mgr"/>
+            <result column="hiredate" property="hiredate"/>
+            <result column="sal" property="sal"/>
+            <result column="comm" property="comm"/>
+            <result column="ename" property="ename"/>
+            <result column="deptno" property="deptno"/>
+        </collection>
+    </resultMap>
+    <select id="getEmpByDeptId" resultMap="empMap">
+        select e.*,d.dname,d.loc
+        from emp e left join dept d
+                on e.deptno = d.deptno
+        where e.deptno = #{deptno}
+    </select>
+
+<!--    报表-->
+<!--    一条记录是一个map（为select中选择的字段，列名是键，值是值）-->
+<!--    map返回回来，传给前端，显示就完事了-->
+    <select id="report" resultType="map">
+        select ename,job,sal,dname,loc
+        from emp e join  dept d on e.deptno = d.deptno
+    </select>
 </mapper>

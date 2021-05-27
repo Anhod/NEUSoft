@@ -88,6 +88,15 @@ public class TestEmpMapper {
         Emp emp = empMapper.getByIdWithDept(7369);
         System.out.println(emp.getDept());
     }
+
+    // --------------------------------------------第三天--------------------------------------------
+    @Test
+    public void getDeptObjectById(){
+        Emp emp = empMapper.getDeptObjectById(7812);
+        System.out.println(emp);
+
+        System.out.println(emp.getDept());
+    }
     @After
     public void end(){
         // 关闭会话

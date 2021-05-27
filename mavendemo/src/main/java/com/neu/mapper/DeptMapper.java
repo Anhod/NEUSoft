@@ -79,4 +79,9 @@ public interface DeptMapper {
 
     // 分页,pageNum为页数，从1开始，pageSize为每一页最多多少行
     List<Dept> paged(@Param("pageNum") int pageNum,@Param("pageSize") int pageSize);
-}
+
+    Dept getEmpByDeptId(int deptno);
+
+    // 报表
+    List<Map<String,Object>> report();
+ }
