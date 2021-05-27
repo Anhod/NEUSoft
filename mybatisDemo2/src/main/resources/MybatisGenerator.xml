@@ -12,7 +12,7 @@
                         connectionURL="jdbc:mysql://localhost:3306/company?characterEncoding=utf-8&amp;serverTimezone=GMT%2B8"
                         userId="root"
                         password="wsqwsqwsq5247">
-            <property name="nullcatalogMeansCurrent " value="true"/>
+            <property name="nullCatalogMeansCurrent " value="true"/>
         </jdbcConnection>
 
         <javaTypeResolver>
@@ -35,11 +35,8 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table tableName="dept" domainObjectName="Dept" enableCountByExample="false"></table>
-
-        <table tableName="emp" domainObjectName="Emp" enableCountByExample="false">
-            
+        <table tableName="emp" domainObjectName="Emp" enableCountByExample="false" schema="root">
+            <columnOverride column="deptno" property="dept" javaType="Dept"></columnOverride>
         </table>
-
     </context>
 </generatorConfiguration>
