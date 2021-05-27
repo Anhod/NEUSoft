@@ -19,4 +19,11 @@ public class Emp {
     private Double sal;      // 薪水
     private Double comm;     // 奖金
     private Integer deptno;  // 部门编号
+
+    public Emp(Integer empno, String ename, String job, Integer mgr) {
+        this.empno = empno;
+        this.ename = ename;
+        this.job = job;
+        this.mgr = mgr;
+    }
 }

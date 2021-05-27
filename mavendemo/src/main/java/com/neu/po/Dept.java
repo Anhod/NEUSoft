@@ -4,12 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Data
 @AllArgsConstructor         // 所有参数的构造方法
 @NoArgsConstructor          // 默认的构造方法
-public class Dept {
+public class Dept implements Serializable {
     private int deptno;
     private String dname ;
     private String loc;

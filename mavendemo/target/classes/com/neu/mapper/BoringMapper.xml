@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neu.mapper.BoringMapper" >
+    <select id="insert" resultType="java.lang.Integer">
+        insert into boring values (#{bid},#{ydd,typeHandler=com.neu.typeHandler.DateIntTypeHandler})
+    </select>
+
+    <select id="getById" resultType="Boring">
+        select * from boring where bid = #{bid}
+    </select>
+</mapper>

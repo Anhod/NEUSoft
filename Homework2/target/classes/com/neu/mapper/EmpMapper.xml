@@ -18,16 +18,27 @@
 
 <!--    动态插入-->
     <insert id="insert">
-        insert into emp(empno, ename, job, mgr, hiredate, sal, comm, deptno) values
+        insert into emp
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="empno!=null">empno,</if>
+            <if test="ename!=null">ename,</if>
+            <if test="job!=null">job,</if>
+            <if test="mgr!=null">mgr,</if>
+            <if test="hiredate!=null">hiredate,</if>
+            <if test="sal!=null">sal,</if>
+            <if test="comm!=null">comm,</if>
+            <if test="deptno!=null">deptno,</if>
+        </trim>
+        values
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="empno!=null">#{empno},</if>
-            <if test="1==1">#{ename},</if>
-            <if test="1==1">#{job},</if>
-            <if test="1==1">#{mgr},</if>
-            <if test="1==1">#{hiredate},</if>
-            <if test="1==1">#{sal},</if>
-            <if test="1==1">#{comm},</if>
-            <if test="1==1">#{deptno},</if>
+            <if test="ename!=null">#{ename},</if>
+            <if test="job!=null">#{job},</if>
+            <if test="mgr!=null">#{mgr},</if>
+            <if test="hiredate!=null">#{hiredate},</if>
+            <if test="sal!=null">#{sal},</if>
+            <if test="comm!=null">#{comm},</if>
+            <if test="deptno!=null">#{deptno},</if>
         </trim>
     </insert>
 

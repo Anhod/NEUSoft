@@ -41,8 +41,9 @@ public class TestDeptMapper {
     @Test
     public void testGetById() throws IOException {
         Dept dept = deptMapper.getById(10);
-        System.out.println(dept);
-        System.out.println(dept.getEmps());
+        System.out.println(dept.getDname());
+        for (int i=0;i<dept.getEmps().size();i++)
+            System.out.println(dept.getEmps().get(i));
     }
 
     // 得到全部记录
@@ -216,6 +217,37 @@ public class TestDeptMapper {
     public void report(){
         List<Map<String,Object>> map = deptMapper.report();
         System.out.println(map);
+
+    }
+
+    // 二级缓存测试
+    @Test
+    public void reportCache() throws IOException {
+        // 把before和after注释掉，在方法中调用两次（会话开启，会话关闭）
+        // Sql语句会显示两次
+//        setup();
+
+        // 只开启一个sessionFactory
+        InputStream inputStream = Resources.getResourceAsStream("SqlMapConfig.xml");
+        SqlSessionFactory sessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+        sqlSession = sessionFactory.openSession();
+        deptMapper = sqlSession.getMapper(DeptMapper.class);
+        List<Map<String,Object>> map = deptMapper.report();
+        System.out.println(map);
+        end();
+
+
+        sqlSession = sessionFactory.openSession();
+        deptMapper = sqlSession.getMapper(DeptMapper.class);
+        map = deptMapper.report();
+        System.out.println(map);
+        end();
+
+        sqlSession = sessionFactory.openSession();
+        deptMapper = sqlSession.getMapper(DeptMapper.class);
+        map = deptMapper.report();
+        System.out.println(map);
+        end();
     }
 
     @After

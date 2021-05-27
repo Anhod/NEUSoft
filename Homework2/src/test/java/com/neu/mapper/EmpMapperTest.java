@@ -44,10 +44,10 @@ public class EmpMapperTest {
             System.out.println(emps.get(i));
     }
 
-    // 动态插入
+    // 有选择的插入
     @Test
     public void insert(){
-        int n = empMapper.insert(new Emp(4444,null,null,0,null,800.0,0.0,10));
+        int n = empMapper.insert(new Emp(4343,"haha",null,null,null,800.0,null,null));
         System.out.println(n);
         sqlSession.commit();
     }

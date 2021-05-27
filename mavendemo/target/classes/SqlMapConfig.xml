@@ -4,6 +4,16 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+<!--    一级缓存默认开启-->
+<!--    开启二级缓存，总开关-->
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+<!--        延迟加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+<!--        取消积极加载-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
 <!--    类型别名-->
     <typeAliases>
 <!--        <typeAlias type="com.neu.po.Dept" alias="dept"></typeAlias>-->
