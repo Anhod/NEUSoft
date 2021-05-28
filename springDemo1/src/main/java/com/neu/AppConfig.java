@@ -1,15 +1,12 @@
 package com.neu;
 
-import com.neu.dao.EmpDao;
-import com.neu.dao.EmpDaoImpl;
-import com.neu.service.EmpService;
-import com.neu.service.EmpServiceImpl;
+
 import org.springframework.context.annotation.*;
 
 // 配置类
 // spring容器中注册组件
 @Configuration
-@ComponentScan(basePackages = {"com.neu.dao","com.neu.service"})   // 告诉他扫描什么包
+@ComponentScan(basePackages = {"com.neu.service"})   // 告诉他扫描什么包
 public class AppConfig {
 //    // 方法名默认是组件名
 //    // 也可以起另外的名字，但是原来的名字就不能用了，只能用name里边的
@@ -32,6 +29,4 @@ public class AppConfig {
 //        EmpServiceImpl service = new EmpServiceImpl(empDao());
 //        return service;
 //    }
-
-
 }

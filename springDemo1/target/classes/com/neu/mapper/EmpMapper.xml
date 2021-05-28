@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neu.mapper.EmpMapper" >
+    <select id="getAll" resultType="com.neu.po.Emp">
+        select * from emp
+    </select>
+
+    <insert id="insert">
+        insert into emp
+        <trim suffixOverrides="," prefix="(" suffix=")">
+            <if test="empno!=null">empno,</if>
+            <if test="job!=null">job,</if>
+            <if test="mgr!=null">mgr,</if>
+            <if test="hiredate!=null">hiredate,</if>
+            <if test="sal!=null">sal,</if>
+            <if test="comm!=null">comm,</if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="empno!=null">#{empno},</if>
+            <if test="ename!=null">ename=#{ename},</if>
+            <if test="job!=null">job=#{job},</if>
+            <if test="mgr!=null">mgr=#{mgr},</if>
+            <if test="hiredate!=null">hiredate=#{hiredate},</if>
+            <if test="sal!=null">sal=#{sal},</if>
+            <if test="comm!=null">comm=#{comm},</if>
+        </trim>
+    </insert>
+
+    <delete id="delete">
+        delete from emp where empno = #{empno}
+    </delete>
+
+<!--    分页-->
+    <select id="paged" resultType="com.neu.po.Emp">
+        select * from emp order by empno
+        limit ${(pageNum-1)*pageSize},#{pageSize}
+    </select>
+</mapper>
