@@ -7,9 +7,49 @@
     <groupId>com.neu</groupId>
     <artifactId>springDemo1</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <packaging>war</packaging>
 
     <dependencies>
+<!--        web导入的包-->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>9.0.46</version>
+        </dependency>
+
+        <!-- JSP -->
+        <!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.taglibs</groupId>
+            <artifactId>taglibs-standard-impl</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>4.3.8.RELEASE</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -101,6 +141,22 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+
+<!--            <plugin>-->
+<!--                <groupId>org.apache.tomcat.maven</groupId>-->
+<!--                <artifactId>tomcat7-maven-plugin</artifactId>-->
+<!--                <version>2.2</version>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash; 设置编码格式 &ndash;&gt;-->
+<!--                    <uriEncoding>UTF-8</uriEncoding>-->
+<!--                    &lt;!&ndash; 控制 tomcat 端口号 &ndash;&gt;-->
+<!--                    <port>8080</port>-->
+<!--                    &lt;!&ndash; 项目发布到 tomcat 后的名称 &ndash;&gt;-->
+<!--                    &lt;!&ndash; 如果写 /，相当于项目发布后的名称为 ROOT &ndash;&gt;-->
+<!--                    &lt;!&ndash; 如果写 /abc，相当于项目发布后的名称为 abc &ndash;&gt;-->
+<!--                    <path>/</path>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 </project>

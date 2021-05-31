@@ -31,7 +31,7 @@
         delete from emp where empno = #{empno}
     </delete>
 
-<!--    分页-->
+<!--    分页，limit后面的第一个参数是起始位置，第二个参数是偏移量-->
     <select id="paged" resultType="com.neu.po.Emp">
         select * from emp order by empno
         limit ${(pageNum-1)*pageSize},#{pageSize}
