@@ -1,5 +1,6 @@
 package com.neu;
 
+import com.github.pagehelper.PageInfo;
 import com.neu.mapper.DeptMapper;
 import com.neu.po.Dept;
 import com.neu.service.DeptService;
@@ -20,10 +21,7 @@ import javax.annotation.Resource;
 @RunWith(SpringJUnit4ClassRunner.class)
 public class DeptMapperTest {
     @Resource
-    private DeptMapper deptMapper;
-
-    @Resource
-    private DeptServiceImpl deptService;
+    private DeptService deptService;
 
     @Test
     public void getById(){
@@ -33,4 +31,12 @@ public class DeptMapperTest {
         Dept dept = deptService.getById(10);
         System.out.println(dept);
     }
+
+    @Test
+    public void paged(){
+        PageInfo<Dept> dept = deptService.getPaged(2,3);
+        System.out.println(dept);
+    }
+
+
 }

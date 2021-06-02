@@ -1,5 +1,6 @@
 package com.neu.service;
 
+import com.github.pagehelper.PageInfo;
 import com.neu.po.Dept;
 
 import java.util.List;
@@ -13,4 +14,6 @@ public interface DeptService {
     int update(Dept dept);
 
     int insert(Dept dept);
+
+    PageInfo<Dept> getPaged(int pageNum,int pageSize);
 }
