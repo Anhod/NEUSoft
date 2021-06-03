@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neu.mapper.EmpMapper" >
+    <resultMap type="com.neu.po.Emp" id="basicMap">
+        <association
+                property="dept"
+                column="deptno"
+                select="com.neu.mapper.DeptMapper.getById">
+        </association>
+    </resultMap>
+
+    <select id="getAll" resultMap="basicMap">
+        select *
+        from emp;
+    </select>
+
+    <select id="getById" resultMap="basicMap">
+        select *
+        from emp where empno = #{empno}
+    </select>
+
+    <update id="update">
+<!--        update emp set ename=#{ename},job=#{job},mgr=#{mgr},hiredate=#{hiredate},sal=#{sal},comm=#{comm} where empno=#{empno}-->
+    </update>
+</mapper>
