@@ -1,0 +1,1022 @@
+2021-06-05 21:17:37.285 [restartedMain-55] INFO  com.neu.NewsApplication 55 logStarting - Starting NewsApplication using Java 1.8.0_211 on LAPTOP-ETLOCT3V with PID 18836 (C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes started by ACER in C:\Users\ACER\Desktop\NEUSoft\homework\news)
+2021-06-05 21:17:37.294 [restartedMain-56] DEBUG com.neu.NewsApplication 56 logStarting - Running with Spring Boot v2.4.6, Spring v5.3.7
+2021-06-05 21:17:37.295 [restartedMain-664] INFO  com.neu.NewsApplication 664 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2021-06-05 21:17:37.342 [restartedMain-255] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor 255 logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-05 21:17:37.342 [restartedMain-255] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor 255 logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-05 21:17:37.916 [restartedMain-105] DEBUG org.apache.ibatis.logging.LogFactory 105 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-06-05 21:17:37.919 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\FirstTitleMapper.class]
+2021-06-05 21:17:37.919 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\SecondMapper.class]
+2021-06-05 21:17:37.920 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\UsersMapper.class]
+2021-06-05 21:17:37.920 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'firstTitleMapper' and 'com.neu.mapper.FirstTitleMapper' mapperInterface
+2021-06-05 21:17:37.921 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'firstTitleMapper'.
+2021-06-05 21:17:37.922 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'secondMapper' and 'com.neu.mapper.SecondMapper' mapperInterface
+2021-06-05 21:17:37.922 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'secondMapper'.
+2021-06-05 21:17:37.922 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'usersMapper' and 'com.neu.mapper.UsersMapper' mapperInterface
+2021-06-05 21:17:37.922 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
+2021-06-05 21:17:38.317 [restartedMain-108] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8080 (http)
+2021-06-05 21:17:38.324 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:17:38.325 [restartedMain-173] INFO  org.apache.catalina.core.StandardService 173 log - Starting service [Tomcat]
+2021-06-05 21:17:38.325 [restartedMain-173] INFO  org.apache.catalina.core.StandardEngine 173 log - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-05 21:17:38.570 [restartedMain-173] INFO  org.apache.jasper.servlet.TldScanner 173 log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-05 21:17:38.576 [restartedMain-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring embedded WebApplicationContext
+2021-06-05 21:17:38.576 [restartedMain-289] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1233 ms
+2021-06-05 21:17:38.641 [restartedMain-946] DEBUG com.zaxxer.hikari.HikariConfig 946 attemptFromContextLoader - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2d306d
+2021-06-05 21:17:38.695 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-06-05 21:17:38.724 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Registered plugin: 'com.github.pagehelper.PageInterceptor@51e5a3'
+2021-06-05 21:17:38.725 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'mapperLocations' was not specified.
+2021-06-05 21:17:39.062 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.AdminController:
+	{ [/admin/login]}: login(String,String,HttpSession,HttpServletResponse)
+	{ [/admin/welcome]}: welcome()
+	{ [/admin/admin]}: admin()
+	{ [/admin/]}: loginMain()
+2021-06-05 21:17:39.066 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.FirstController:
+	{ [/first/add]}: add()
+	{ [/first/update]}: update(String,Model)
+	{ [/first/delete]}: delete(String)
+	{ [/first/insert]}: insert(FirstTitle)
+	{ [/first/firstList]}: getPaged(int,int,Model)
+	{ [/first/editFirst]}: editFirst(FirstTitle)
+2021-06-05 21:17:39.067 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.NewsController:
+	{ [/getSecond]}: getSecond(String,Model)
+	{ [/]}: newsMain(Model)
+	{ [/news]}: news(String,Model)
+2021-06-05 21:17:39.068 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.SecondController:
+	{ [/second/update]}: update(String,Model)
+	{ [/second/delete]}: delete(String)
+	{ [/second/insert]}: insert(HttpServletRequest,SecondTitle)
+	{ [/second/addSecond]}: addSecond(Model)
+	{ [/second/secondList]}: secondList(int,int,Model)
+	{ [/second/editSecond]}: editFirst(SecondTitle,HttpServletRequest)
+2021-06-05 21:17:39.070 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-06-05 21:17:39.080 [restartedMain-57] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping 57 <init> - Adding welcome page template: index
+2021-06-05 21:17:39.090 [restartedMain-86] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 86 detectHandlers - 'beanNameHandlerMapping' {}
+2021-06-05 21:17:39.101 [restartedMain-177] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 177 logMappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2021-06-05 21:17:39.233 [restartedMain-58] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2021-06-05 21:17:39.254 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Starting ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:17:39.276 [restartedMain-220] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 21:17:39.286 [restartedMain-61] INFO  com.neu.NewsApplication 61 logStarted - Started NewsApplication in 2.37 seconds (JVM running for 4.719)
+2021-06-05 21:17:39.332 [http-nio-8080-exec-1-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 21:17:39.332 [http-nio-8080-exec-1-525] INFO  org.springframework.web.servlet.DispatcherServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2021-06-05 21:17:39.333 [http-nio-8080-exec-1-547] INFO  org.springframework.web.servlet.DispatcherServlet 547 initServletBean - Completed initialization in 1 ms
+2021-06-05 21:17:39.363 [http-nio-8080-exec-1-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:17:39.371 [http-nio-8080-exec-1-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9e3e8d] was not registered for synchronization because synchronization is not active
+2021-06-05 21:17:39.378 [http-nio-8080-exec-1-1066] DEBUG com.zaxxer.hikari.HikariConfig 1066 logConfiguration - HikariPool-1 - configuration:
+2021-06-05 21:17:39.379 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - allowPoolSuspension.............false
+2021-06-05 21:17:39.380 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - autoCommit......................true
+2021-06-05 21:17:39.380 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - catalog.........................none
+2021-06-05 21:17:39.380 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - connectionInitSql...............none
+2021-06-05 21:17:39.380 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - connectionTestQuery.............none
+2021-06-05 21:17:39.380 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - connectionTimeout...............30000
+2021-06-05 21:17:39.381 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - dataSource......................none
+2021-06-05 21:17:39.381 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - dataSourceClassName.............none
+2021-06-05 21:17:39.381 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - dataSourceJNDI..................none
+2021-06-05 21:17:39.382 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - dataSourceProperties............{password=<masked>}
+2021-06-05 21:17:39.382 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - driverClassName................."com.mysql.cj.jdbc.Driver"
+2021-06-05 21:17:39.383 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - exceptionOverrideClassName......none
+2021-06-05 21:17:39.383 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - healthCheckProperties...........{}
+2021-06-05 21:17:39.383 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - healthCheckRegistry.............none
+2021-06-05 21:17:39.383 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - idleTimeout.....................600000
+2021-06-05 21:17:39.384 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - initializationFailTimeout.......1
+2021-06-05 21:17:39.384 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - isolateInternalQueries..........false
+2021-06-05 21:17:39.384 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - jdbcUrl.........................jdbc:mysql://localhost:3306/company?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+2021-06-05 21:17:39.384 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - leakDetectionThreshold..........0
+2021-06-05 21:17:39.385 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - maxLifetime.....................1800000
+2021-06-05 21:17:39.385 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - maximumPoolSize.................10
+2021-06-05 21:17:39.385 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - metricRegistry..................none
+2021-06-05 21:17:39.386 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - metricsTrackerFactory...........none
+2021-06-05 21:17:39.386 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - minimumIdle.....................10
+2021-06-05 21:17:39.386 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - password........................<masked>
+2021-06-05 21:17:39.386 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - poolName........................"HikariPool-1"
+2021-06-05 21:17:39.386 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - readOnly........................false
+2021-06-05 21:17:39.387 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - registerMbeans..................false
+2021-06-05 21:17:39.387 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - scheduledExecutor...............none
+2021-06-05 21:17:39.387 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - schema..........................none
+2021-06-05 21:17:39.387 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - threadFactory...................internal
+2021-06-05 21:17:39.387 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - transactionIsolation............default
+2021-06-05 21:17:39.388 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - username........................"root"
+2021-06-05 21:17:39.388 [http-nio-8080-exec-1-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - validationTimeout...............5000
+2021-06-05 21:17:39.388 [http-nio-8080-exec-1-110] INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-1 - Starting...
+2021-06-05 21:17:40.862 [http-nio-8080-exec-1-564] DEBUG com.zaxxer.hikari.pool.HikariPool 564 checkFailFast - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@126b74f
+2021-06-05 21:17:40.864 [http-nio-8080-exec-1-123] INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-1 - Start completed.
+2021-06-05 21:17:40.867 [http-nio-8080-exec-1-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@19663589 wrapping com.mysql.cj.jdbc.ConnectionImpl@126b74f] will not be managed by Spring
+2021-06-05 21:17:40.872 [http-nio-8080-exec-1-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==>  Preparing: select * from firstTitle
+2021-06-05 21:17:40.893 [http-nio-8080-exec-1-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==> Parameters: 
+2021-06-05 21:17:40.918 [http-nio-8080-exec-1-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - <==      Total: 11
+2021-06-05 21:17:40.922 [http-nio-8080-exec-1-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9e3e8d]
+2021-06-05 21:17:40.966 [HikariPool-1 housekeeper-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2021-06-05 21:17:40.987 [HikariPool-1 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b0b94
+2021-06-05 21:17:41.008 [HikariPool-1 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@329af6
+2021-06-05 21:17:41.026 [HikariPool-1 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@159fee0
+2021-06-05 21:17:41.044 [HikariPool-1 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@eaec23
+2021-06-05 21:17:41.061 [HikariPool-1 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1174110
+2021-06-05 21:17:41.085 [HikariPool-1 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@eb6ac5
+2021-06-05 21:17:41.105 [HikariPool-1 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@175504d
+2021-06-05 21:17:41.129 [HikariPool-1 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1062512
+2021-06-05 21:17:41.153 [HikariPool-1 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17ce72c
+2021-06-05 21:17:41.153 [HikariPool-1 connection adder-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2021-06-05 21:18:00.109 [http-nio-8080-exec-5-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:18:00.110 [http-nio-8080-exec-5-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@109d4d7] was not registered for synchronization because synchronization is not active
+2021-06-05 21:18:00.110 [http-nio-8080-exec-5-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@30293190 wrapping com.mysql.cj.jdbc.ConnectionImpl@126b74f] will not be managed by Spring
+2021-06-05 21:18:00.110 [http-nio-8080-exec-5-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==>  Preparing: select * from firstTitle
+2021-06-05 21:18:00.111 [http-nio-8080-exec-5-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==> Parameters: 
+2021-06-05 21:18:00.114 [http-nio-8080-exec-5-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - <==      Total: 11
+2021-06-05 21:18:00.115 [http-nio-8080-exec-5-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@109d4d7]
+2021-06-05 21:18:10.967 [HikariPool-1 housekeeper-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-06-05 21:18:10.967 [HikariPool-1 housekeeper-517] DEBUG com.zaxxer.hikari.pool.HikariPool 517 fillPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-06-05 21:18:40.968 [HikariPool-1 housekeeper-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-06-05 21:18:40.968 [HikariPool-1 housekeeper-517] DEBUG com.zaxxer.hikari.pool.HikariPool 517 fillPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-06-05 21:18:49.851 [Thread-6-350] INFO  com.zaxxer.hikari.HikariDataSource 350 close - HikariPool-1 - Shutdown initiated...
+2021-06-05 21:18:49.851 [Thread-6-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2021-06-05 21:18:49.853 [HikariPool-1 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@126b74f: (connection evicted)
+2021-06-05 21:18:49.854 [HikariPool-1 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4b0b94: (connection evicted)
+2021-06-05 21:18:49.854 [HikariPool-1 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@329af6: (connection evicted)
+2021-06-05 21:18:49.854 [HikariPool-1 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@159fee0: (connection evicted)
+2021-06-05 21:18:49.855 [HikariPool-1 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@eaec23: (connection evicted)
+2021-06-05 21:18:49.855 [HikariPool-1 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1174110: (connection evicted)
+2021-06-05 21:18:49.855 [HikariPool-1 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@eb6ac5: (connection evicted)
+2021-06-05 21:18:49.856 [HikariPool-1 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@175504d: (connection evicted)
+2021-06-05 21:18:49.856 [HikariPool-1 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1062512: (connection evicted)
+2021-06-05 21:18:49.856 [HikariPool-1 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@17ce72c: (connection evicted)
+2021-06-05 21:18:49.857 [Thread-6-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2021-06-05 21:18:49.857 [Thread-6-352] INFO  com.zaxxer.hikari.HikariDataSource 352 close - HikariPool-1 - Shutdown completed.
+2021-06-05 21:18:50.002 [restartedMain-55] INFO  com.neu.NewsApplication 55 logStarting - Starting NewsApplication using Java 1.8.0_211 on LAPTOP-ETLOCT3V with PID 18836 (C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes started by ACER in C:\Users\ACER\Desktop\NEUSoft\homework\news)
+2021-06-05 21:18:50.004 [restartedMain-56] DEBUG com.neu.NewsApplication 56 logStarting - Running with Spring Boot v2.4.6, Spring v5.3.7
+2021-06-05 21:18:50.004 [restartedMain-664] INFO  com.neu.NewsApplication 664 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2021-06-05 21:18:50.295 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\FirstTitleMapper.class]
+2021-06-05 21:18:50.295 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\SecondMapper.class]
+2021-06-05 21:18:50.295 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\UsersMapper.class]
+2021-06-05 21:18:50.296 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'firstTitleMapper' and 'com.neu.mapper.FirstTitleMapper' mapperInterface
+2021-06-05 21:18:50.296 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'firstTitleMapper'.
+2021-06-05 21:18:50.296 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'secondMapper' and 'com.neu.mapper.SecondMapper' mapperInterface
+2021-06-05 21:18:50.296 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'secondMapper'.
+2021-06-05 21:18:50.296 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'usersMapper' and 'com.neu.mapper.UsersMapper' mapperInterface
+2021-06-05 21:18:50.296 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
+2021-06-05 21:18:50.393 [restartedMain-108] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8080 (http)
+2021-06-05 21:18:50.393 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:18:50.393 [restartedMain-173] INFO  org.apache.catalina.core.StandardService 173 log - Starting service [Tomcat]
+2021-06-05 21:18:50.394 [restartedMain-173] INFO  org.apache.catalina.core.StandardEngine 173 log - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-05 21:18:50.516 [restartedMain-173] INFO  org.apache.jasper.servlet.TldScanner 173 log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-05 21:18:50.519 [restartedMain-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring embedded WebApplicationContext
+2021-06-05 21:18:50.519 [restartedMain-289] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 512 ms
+2021-06-05 21:18:50.540 [restartedMain-946] DEBUG com.zaxxer.hikari.HikariConfig 946 attemptFromContextLoader - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2ac17b
+2021-06-05 21:18:50.555 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-06-05 21:18:50.556 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Registered plugin: 'com.github.pagehelper.PageInterceptor@16b022f'
+2021-06-05 21:18:50.556 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'mapperLocations' was not specified.
+2021-06-05 21:18:50.646 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.AdminController:
+	{ [/admin/login]}: login(String,String,HttpSession,HttpServletResponse)
+	{ [/admin/welcome]}: welcome()
+	{ [/admin/admin]}: admin()
+	{ [/admin/]}: loginMain()
+2021-06-05 21:18:50.649 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.FirstController:
+	{ [/first/add]}: add()
+	{ [/first/update]}: update(String,Model)
+	{ [/first/delete]}: delete(String)
+	{ [/first/insert]}: insert(FirstTitle)
+	{ [/first/firstList]}: getPaged(int,int,Model)
+	{ [/first/editFirst]}: editFirst(FirstTitle)
+2021-06-05 21:18:50.650 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.NewsController:
+	{ [/getSecond]}: getSecond(String,Model)
+	{ [/]}: newsMain(Model)
+	{ [/news]}: news(String,Model)
+2021-06-05 21:18:50.651 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.SecondController:
+	{ [/second/update]}: update(String,Model)
+	{ [/second/delete]}: delete(String)
+	{ [/second/insert]}: insert(HttpServletRequest,SecondTitle)
+	{ [/second/addSecond]}: addSecond(Model)
+	{ [/second/secondList]}: secondList(int,int,Model)
+	{ [/second/editSecond]}: editFirst(SecondTitle,HttpServletRequest)
+2021-06-05 21:18:50.652 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-06-05 21:18:50.660 [restartedMain-57] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping 57 <init> - Adding welcome page template: index
+2021-06-05 21:18:50.666 [restartedMain-86] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 86 detectHandlers - 'beanNameHandlerMapping' {}
+2021-06-05 21:18:50.669 [restartedMain-177] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 177 logMappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2021-06-05 21:18:50.698 [restartedMain-58] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2021-06-05 21:18:50.705 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Starting ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:18:50.710 [restartedMain-220] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 21:18:50.714 [restartedMain-61] INFO  com.neu.NewsApplication 61 logStarted - Started NewsApplication in 0.792 seconds (JVM running for 76.147)
+2021-06-05 21:18:50.716 [restartedMain-63] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2021-06-05 21:18:50.883 [http-nio-8080-exec-1-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 21:18:50.884 [http-nio-8080-exec-1-525] INFO  org.springframework.web.servlet.DispatcherServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2021-06-05 21:18:50.884 [http-nio-8080-exec-1-547] INFO  org.springframework.web.servlet.DispatcherServlet 547 initServletBean - Completed initialization in 0 ms
+2021-06-05 21:18:53.360 [restartedMain-55] INFO  com.neu.NewsApplication 55 logStarting - Starting NewsApplication using Java 1.8.0_211 on LAPTOP-ETLOCT3V with PID 18836 (C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes started by ACER in C:\Users\ACER\Desktop\NEUSoft\homework\news)
+2021-06-05 21:18:53.361 [restartedMain-56] DEBUG com.neu.NewsApplication 56 logStarting - Running with Spring Boot v2.4.6, Spring v5.3.7
+2021-06-05 21:18:53.361 [restartedMain-664] INFO  com.neu.NewsApplication 664 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2021-06-05 21:18:53.621 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\FirstTitleMapper.class]
+2021-06-05 21:18:53.622 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\SecondMapper.class]
+2021-06-05 21:18:53.622 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\UsersMapper.class]
+2021-06-05 21:18:53.622 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'firstTitleMapper' and 'com.neu.mapper.FirstTitleMapper' mapperInterface
+2021-06-05 21:18:53.622 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'firstTitleMapper'.
+2021-06-05 21:18:53.622 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'secondMapper' and 'com.neu.mapper.SecondMapper' mapperInterface
+2021-06-05 21:18:53.622 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'secondMapper'.
+2021-06-05 21:18:53.623 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'usersMapper' and 'com.neu.mapper.UsersMapper' mapperInterface
+2021-06-05 21:18:53.623 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
+2021-06-05 21:18:53.722 [restartedMain-108] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8080 (http)
+2021-06-05 21:18:53.723 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:18:53.723 [restartedMain-173] INFO  org.apache.catalina.core.StandardService 173 log - Starting service [Tomcat]
+2021-06-05 21:18:53.723 [restartedMain-173] INFO  org.apache.catalina.core.StandardEngine 173 log - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-05 21:18:53.833 [restartedMain-173] INFO  org.apache.jasper.servlet.TldScanner 173 log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-05 21:18:53.836 [restartedMain-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring embedded WebApplicationContext
+2021-06-05 21:18:53.836 [restartedMain-289] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 471 ms
+2021-06-05 21:18:53.855 [restartedMain-946] DEBUG com.zaxxer.hikari.HikariConfig 946 attemptFromContextLoader - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@fec521
+2021-06-05 21:18:53.870 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-06-05 21:18:53.870 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Registered plugin: 'com.github.pagehelper.PageInterceptor@12aa9e3'
+2021-06-05 21:18:53.870 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'mapperLocations' was not specified.
+2021-06-05 21:18:53.953 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.AdminController:
+	{ [/admin/login]}: login(String,String,HttpSession,HttpServletResponse)
+	{ [/admin/welcome]}: welcome()
+	{ [/admin/admin]}: admin()
+	{ [/admin/]}: loginMain()
+2021-06-05 21:18:53.955 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.FirstController:
+	{ [/first/add]}: add()
+	{ [/first/update]}: update(String,Model)
+	{ [/first/delete]}: delete(String)
+	{ [/first/insert]}: insert(FirstTitle)
+	{ [/first/firstList]}: getPaged(int,int,Model)
+	{ [/first/editFirst]}: editFirst(FirstTitle)
+2021-06-05 21:18:53.956 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.NewsController:
+	{ [/getSecond]}: getSecond(String,Model)
+	{ [/]}: newsMain(Model)
+	{ [/news]}: news(String,Model)
+2021-06-05 21:18:53.957 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.SecondController:
+	{ [/second/update]}: update(String,Model)
+	{ [/second/delete]}: delete(String)
+	{ [/second/insert]}: insert(HttpServletRequest,SecondTitle)
+	{ [/second/addSecond]}: addSecond(Model)
+	{ [/second/secondList]}: secondList(int,int,Model)
+	{ [/second/editSecond]}: editFirst(SecondTitle,HttpServletRequest)
+2021-06-05 21:18:53.958 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-06-05 21:18:53.967 [restartedMain-57] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping 57 <init> - Adding welcome page template: index
+2021-06-05 21:18:53.970 [restartedMain-86] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 86 detectHandlers - 'beanNameHandlerMapping' {}
+2021-06-05 21:18:53.974 [restartedMain-177] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 177 logMappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2021-06-05 21:18:54.002 [restartedMain-58] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2021-06-05 21:18:54.010 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Starting ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:18:54.014 [restartedMain-220] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 21:18:54.018 [restartedMain-61] INFO  com.neu.NewsApplication 61 logStarted - Started NewsApplication in 0.726 seconds (JVM running for 79.451)
+2021-06-05 21:18:54.020 [restartedMain-63] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2021-06-05 21:18:55.737 [http-nio-8080-exec-1-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 21:18:55.737 [http-nio-8080-exec-1-525] INFO  org.springframework.web.servlet.DispatcherServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2021-06-05 21:18:55.738 [http-nio-8080-exec-1-547] INFO  org.springframework.web.servlet.DispatcherServlet 547 initServletBean - Completed initialization in 1 ms
+2021-06-05 21:19:15.610 [restartedMain-55] INFO  com.neu.NewsApplication 55 logStarting - Starting NewsApplication using Java 1.8.0_211 on LAPTOP-ETLOCT3V with PID 18836 (C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes started by ACER in C:\Users\ACER\Desktop\NEUSoft\homework\news)
+2021-06-05 21:19:15.611 [restartedMain-56] DEBUG com.neu.NewsApplication 56 logStarting - Running with Spring Boot v2.4.6, Spring v5.3.7
+2021-06-05 21:19:15.612 [restartedMain-664] INFO  com.neu.NewsApplication 664 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2021-06-05 21:19:15.936 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\FirstTitleMapper.class]
+2021-06-05 21:19:15.936 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\SecondMapper.class]
+2021-06-05 21:19:15.937 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\UsersMapper.class]
+2021-06-05 21:19:15.937 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'firstTitleMapper' and 'com.neu.mapper.FirstTitleMapper' mapperInterface
+2021-06-05 21:19:15.937 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'firstTitleMapper'.
+2021-06-05 21:19:15.937 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'secondMapper' and 'com.neu.mapper.SecondMapper' mapperInterface
+2021-06-05 21:19:15.937 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'secondMapper'.
+2021-06-05 21:19:15.937 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'usersMapper' and 'com.neu.mapper.UsersMapper' mapperInterface
+2021-06-05 21:19:15.937 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
+2021-06-05 21:19:16.062 [restartedMain-108] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8080 (http)
+2021-06-05 21:19:16.062 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:19:16.063 [restartedMain-173] INFO  org.apache.catalina.core.StandardService 173 log - Starting service [Tomcat]
+2021-06-05 21:19:16.063 [restartedMain-173] INFO  org.apache.catalina.core.StandardEngine 173 log - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-05 21:19:16.202 [restartedMain-173] INFO  org.apache.jasper.servlet.TldScanner 173 log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-05 21:19:16.205 [restartedMain-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring embedded WebApplicationContext
+2021-06-05 21:19:16.206 [restartedMain-289] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 590 ms
+2021-06-05 21:19:16.227 [restartedMain-946] DEBUG com.zaxxer.hikari.HikariConfig 946 attemptFromContextLoader - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2c8f3a
+2021-06-05 21:19:16.244 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-06-05 21:19:16.245 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Registered plugin: 'com.github.pagehelper.PageInterceptor@fe7a64'
+2021-06-05 21:19:16.245 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'mapperLocations' was not specified.
+2021-06-05 21:19:16.344 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.AdminController:
+	{ [/admin/login]}: login(String,String,HttpSession,HttpServletResponse)
+	{ [/admin/welcome]}: welcome()
+	{ [/admin/admin]}: admin()
+	{ [/admin/]}: loginMain()
+2021-06-05 21:19:16.346 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.FirstController:
+	{ [/first/add]}: add()
+	{ [/first/update]}: update(String,Model)
+	{ [/first/delete]}: delete(String)
+	{ [/first/insert]}: insert(FirstTitle)
+	{ [/first/firstList]}: getPaged(int,int,Model)
+	{ [/first/editFirst]}: editFirst(FirstTitle)
+2021-06-05 21:19:16.347 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.NewsController:
+	{ [/getSecond]}: getSecond(String,Model)
+	{ [/]}: newsMain(Model)
+	{ [/news]}: news(String,Model)
+2021-06-05 21:19:16.349 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.SecondController:
+	{ [/second/update]}: update(String,Model)
+	{ [/second/delete]}: delete(String)
+	{ [/second/insert]}: insert(HttpServletRequest,SecondTitle)
+	{ [/second/addSecond]}: addSecond(Model)
+	{ [/second/secondList]}: secondList(int,int,Model)
+	{ [/second/editSecond]}: editFirst(SecondTitle,HttpServletRequest)
+2021-06-05 21:19:16.351 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-06-05 21:19:16.364 [restartedMain-57] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping 57 <init> - Adding welcome page template: index
+2021-06-05 21:19:16.368 [restartedMain-86] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 86 detectHandlers - 'beanNameHandlerMapping' {}
+2021-06-05 21:19:16.372 [restartedMain-177] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 177 logMappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2021-06-05 21:19:16.417 [restartedMain-58] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2021-06-05 21:19:16.426 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Starting ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:19:16.432 [restartedMain-220] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 21:19:16.436 [restartedMain-61] INFO  com.neu.NewsApplication 61 logStarted - Started NewsApplication in 0.918 seconds (JVM running for 101.869)
+2021-06-05 21:19:16.438 [restartedMain-63] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2021-06-05 21:19:16.459 [http-nio-8080-exec-1-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 21:19:16.459 [http-nio-8080-exec-1-525] INFO  org.springframework.web.servlet.DispatcherServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2021-06-05 21:19:16.460 [http-nio-8080-exec-1-547] INFO  org.springframework.web.servlet.DispatcherServlet 547 initServletBean - Completed initialization in 0 ms
+2021-06-05 21:19:18.972 [restartedMain-55] INFO  com.neu.NewsApplication 55 logStarting - Starting NewsApplication using Java 1.8.0_211 on LAPTOP-ETLOCT3V with PID 18836 (C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes started by ACER in C:\Users\ACER\Desktop\NEUSoft\homework\news)
+2021-06-05 21:19:18.973 [restartedMain-56] DEBUG com.neu.NewsApplication 56 logStarting - Running with Spring Boot v2.4.6, Spring v5.3.7
+2021-06-05 21:19:18.974 [restartedMain-664] INFO  com.neu.NewsApplication 664 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2021-06-05 21:19:19.189 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\FirstTitleMapper.class]
+2021-06-05 21:19:19.190 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\SecondMapper.class]
+2021-06-05 21:19:19.190 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\UsersMapper.class]
+2021-06-05 21:19:19.190 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'firstTitleMapper' and 'com.neu.mapper.FirstTitleMapper' mapperInterface
+2021-06-05 21:19:19.191 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'firstTitleMapper'.
+2021-06-05 21:19:19.191 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'secondMapper' and 'com.neu.mapper.SecondMapper' mapperInterface
+2021-06-05 21:19:19.191 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'secondMapper'.
+2021-06-05 21:19:19.191 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'usersMapper' and 'com.neu.mapper.UsersMapper' mapperInterface
+2021-06-05 21:19:19.191 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
+2021-06-05 21:19:19.279 [restartedMain-108] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8080 (http)
+2021-06-05 21:19:19.279 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:19:19.279 [restartedMain-173] INFO  org.apache.catalina.core.StandardService 173 log - Starting service [Tomcat]
+2021-06-05 21:19:19.279 [restartedMain-173] INFO  org.apache.catalina.core.StandardEngine 173 log - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-05 21:19:19.387 [restartedMain-173] INFO  org.apache.jasper.servlet.TldScanner 173 log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-05 21:19:19.390 [restartedMain-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring embedded WebApplicationContext
+2021-06-05 21:19:19.390 [restartedMain-289] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 414 ms
+2021-06-05 21:19:19.406 [restartedMain-946] DEBUG com.zaxxer.hikari.HikariConfig 946 attemptFromContextLoader - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@391263
+2021-06-05 21:19:19.419 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-06-05 21:19:19.420 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Registered plugin: 'com.github.pagehelper.PageInterceptor@17fc31a'
+2021-06-05 21:19:19.420 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'mapperLocations' was not specified.
+2021-06-05 21:19:19.495 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.AdminController:
+	{ [/admin/login]}: login(String,String,HttpSession,HttpServletResponse)
+	{ [/admin/welcome]}: welcome()
+	{ [/admin/admin]}: admin()
+	{ [/admin/]}: loginMain()
+2021-06-05 21:19:19.496 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.FirstController:
+	{ [/first/add]}: add()
+	{ [/first/update]}: update(String,Model)
+	{ [/first/delete]}: delete(String)
+	{ [/first/insert]}: insert(FirstTitle)
+	{ [/first/firstList]}: getPaged(int,int,Model)
+	{ [/first/editFirst]}: editFirst(FirstTitle)
+2021-06-05 21:19:19.497 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.NewsController:
+	{ [/getSecond]}: getSecond(String,Model)
+	{ [/]}: newsMain(Model)
+	{ [/news]}: news(String,Model)
+2021-06-05 21:19:19.498 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.SecondController:
+	{ [/second/update]}: update(String,Model)
+	{ [/second/delete]}: delete(String)
+	{ [/second/insert]}: insert(HttpServletRequest,SecondTitle)
+	{ [/second/addSecond]}: addSecond(Model)
+	{ [/second/secondList]}: secondList(int,int,Model)
+	{ [/second/editSecond]}: editFirst(SecondTitle,HttpServletRequest)
+2021-06-05 21:19:19.499 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-06-05 21:19:19.508 [restartedMain-57] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping 57 <init> - Adding welcome page template: index
+2021-06-05 21:19:19.512 [restartedMain-86] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 86 detectHandlers - 'beanNameHandlerMapping' {}
+2021-06-05 21:19:19.515 [restartedMain-177] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 177 logMappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2021-06-05 21:19:19.540 [restartedMain-58] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2021-06-05 21:19:19.547 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Starting ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:19:19.552 [restartedMain-220] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 21:19:19.555 [restartedMain-61] INFO  com.neu.NewsApplication 61 logStarted - Started NewsApplication in 0.646 seconds (JVM running for 104.988)
+2021-06-05 21:19:19.556 [restartedMain-63] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2021-06-05 21:19:20.763 [http-nio-8080-exec-1-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 21:19:20.763 [http-nio-8080-exec-1-525] INFO  org.springframework.web.servlet.DispatcherServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2021-06-05 21:19:20.764 [http-nio-8080-exec-1-547] INFO  org.springframework.web.servlet.DispatcherServlet 547 initServletBean - Completed initialization in 1 ms
+2021-06-05 21:19:27.573 [restartedMain-55] INFO  com.neu.NewsApplication 55 logStarting - Starting NewsApplication using Java 1.8.0_211 on LAPTOP-ETLOCT3V with PID 18836 (C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes started by ACER in C:\Users\ACER\Desktop\NEUSoft\homework\news)
+2021-06-05 21:19:27.574 [restartedMain-56] DEBUG com.neu.NewsApplication 56 logStarting - Running with Spring Boot v2.4.6, Spring v5.3.7
+2021-06-05 21:19:27.575 [restartedMain-664] INFO  com.neu.NewsApplication 664 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2021-06-05 21:19:27.841 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\FirstTitleMapper.class]
+2021-06-05 21:19:27.842 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\SecondMapper.class]
+2021-06-05 21:19:27.842 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\UsersMapper.class]
+2021-06-05 21:19:27.842 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'firstTitleMapper' and 'com.neu.mapper.FirstTitleMapper' mapperInterface
+2021-06-05 21:19:27.842 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'firstTitleMapper'.
+2021-06-05 21:19:27.842 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'secondMapper' and 'com.neu.mapper.SecondMapper' mapperInterface
+2021-06-05 21:19:27.843 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'secondMapper'.
+2021-06-05 21:19:27.843 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'usersMapper' and 'com.neu.mapper.UsersMapper' mapperInterface
+2021-06-05 21:19:27.843 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
+2021-06-05 21:19:27.943 [restartedMain-108] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8080 (http)
+2021-06-05 21:19:27.944 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:19:27.944 [restartedMain-173] INFO  org.apache.catalina.core.StandardService 173 log - Starting service [Tomcat]
+2021-06-05 21:19:27.945 [restartedMain-173] INFO  org.apache.catalina.core.StandardEngine 173 log - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-05 21:19:28.066 [restartedMain-173] INFO  org.apache.jasper.servlet.TldScanner 173 log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-05 21:19:28.070 [restartedMain-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring embedded WebApplicationContext
+2021-06-05 21:19:28.070 [restartedMain-289] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 492 ms
+2021-06-05 21:19:28.090 [restartedMain-946] DEBUG com.zaxxer.hikari.HikariConfig 946 attemptFromContextLoader - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@286809
+2021-06-05 21:19:28.104 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-06-05 21:19:28.105 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Registered plugin: 'com.github.pagehelper.PageInterceptor@f89776'
+2021-06-05 21:19:28.105 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'mapperLocations' was not specified.
+2021-06-05 21:19:28.197 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.AdminController:
+	{ [/admin/login]}: login(String,String,HttpSession,HttpServletResponse)
+	{ [/admin/welcome]}: welcome()
+	{ [/admin/admin]}: admin()
+	{ [/admin/]}: loginMain()
+2021-06-05 21:19:28.199 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.FirstController:
+	{ [/first/add]}: add()
+	{ [/first/update]}: update(String,Model)
+	{ [/first/delete]}: delete(String)
+	{ [/first/insert]}: insert(FirstTitle)
+	{ [/first/firstList]}: getPaged(int,int,Model)
+	{ [/first/editFirst]}: editFirst(FirstTitle)
+2021-06-05 21:19:28.199 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.NewsController:
+	{ [/getSecond]}: getSecond(String,Model)
+	{ [/]}: newsMain(Model)
+	{ [/news]}: news(String,Model)
+2021-06-05 21:19:28.201 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.SecondController:
+	{ [/second/update]}: update(String,Model)
+	{ [/second/delete]}: delete(String)
+	{ [/second/insert]}: insert(HttpServletRequest,SecondTitle)
+	{ [/second/addSecond]}: addSecond(Model)
+	{ [/second/secondList]}: secondList(int,int,Model)
+	{ [/second/editSecond]}: editFirst(SecondTitle,HttpServletRequest)
+2021-06-05 21:19:28.202 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-06-05 21:19:28.211 [restartedMain-57] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping 57 <init> - Adding welcome page template: index
+2021-06-05 21:19:28.216 [restartedMain-86] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 86 detectHandlers - 'beanNameHandlerMapping' {}
+2021-06-05 21:19:28.219 [restartedMain-177] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 177 logMappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2021-06-05 21:19:28.248 [restartedMain-58] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2021-06-05 21:19:28.256 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Starting ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:19:28.261 [restartedMain-220] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 21:19:28.265 [restartedMain-61] INFO  com.neu.NewsApplication 61 logStarted - Started NewsApplication in 0.76 seconds (JVM running for 113.697)
+2021-06-05 21:19:28.266 [restartedMain-63] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2021-06-05 21:19:30.732 [restartedMain-55] INFO  com.neu.NewsApplication 55 logStarting - Starting NewsApplication using Java 1.8.0_211 on LAPTOP-ETLOCT3V with PID 18836 (C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes started by ACER in C:\Users\ACER\Desktop\NEUSoft\homework\news)
+2021-06-05 21:19:30.733 [restartedMain-56] DEBUG com.neu.NewsApplication 56 logStarting - Running with Spring Boot v2.4.6, Spring v5.3.7
+2021-06-05 21:19:30.734 [restartedMain-664] INFO  com.neu.NewsApplication 664 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2021-06-05 21:19:30.954 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\FirstTitleMapper.class]
+2021-06-05 21:19:30.954 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\SecondMapper.class]
+2021-06-05 21:19:30.955 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\UsersMapper.class]
+2021-06-05 21:19:30.955 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'firstTitleMapper' and 'com.neu.mapper.FirstTitleMapper' mapperInterface
+2021-06-05 21:19:30.955 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'firstTitleMapper'.
+2021-06-05 21:19:30.955 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'secondMapper' and 'com.neu.mapper.SecondMapper' mapperInterface
+2021-06-05 21:19:30.955 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'secondMapper'.
+2021-06-05 21:19:30.955 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'usersMapper' and 'com.neu.mapper.UsersMapper' mapperInterface
+2021-06-05 21:19:30.955 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
+2021-06-05 21:19:31.038 [restartedMain-108] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8080 (http)
+2021-06-05 21:19:31.038 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:19:31.038 [restartedMain-173] INFO  org.apache.catalina.core.StandardService 173 log - Starting service [Tomcat]
+2021-06-05 21:19:31.039 [restartedMain-173] INFO  org.apache.catalina.core.StandardEngine 173 log - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-05 21:19:31.144 [restartedMain-173] INFO  org.apache.jasper.servlet.TldScanner 173 log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-05 21:19:31.147 [restartedMain-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring embedded WebApplicationContext
+2021-06-05 21:19:31.147 [restartedMain-289] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 411 ms
+2021-06-05 21:19:31.164 [restartedMain-946] DEBUG com.zaxxer.hikari.HikariConfig 946 attemptFromContextLoader - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1723887
+2021-06-05 21:19:31.177 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-06-05 21:19:31.177 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Registered plugin: 'com.github.pagehelper.PageInterceptor@1a0bd5'
+2021-06-05 21:19:31.178 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'mapperLocations' was not specified.
+2021-06-05 21:19:31.252 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.AdminController:
+	{ [/admin/login]}: login(String,String,HttpSession,HttpServletResponse)
+	{ [/admin/welcome]}: welcome()
+	{ [/admin/admin]}: admin()
+	{ [/admin/]}: loginMain()
+2021-06-05 21:19:31.253 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.FirstController:
+	{ [/first/add]}: add()
+	{ [/first/update]}: update(String,Model)
+	{ [/first/delete]}: delete(String)
+	{ [/first/insert]}: insert(FirstTitle)
+	{ [/first/firstList]}: getPaged(int,int,Model)
+	{ [/first/editFirst]}: editFirst(FirstTitle)
+2021-06-05 21:19:31.253 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.NewsController:
+	{ [/getSecond]}: getSecond(String,Model)
+	{ [/]}: newsMain(Model)
+	{ [/news]}: news(String,Model)
+2021-06-05 21:19:31.254 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.SecondController:
+	{ [/second/update]}: update(String,Model)
+	{ [/second/delete]}: delete(String)
+	{ [/second/insert]}: insert(HttpServletRequest,SecondTitle)
+	{ [/second/addSecond]}: addSecond(Model)
+	{ [/second/secondList]}: secondList(int,int,Model)
+	{ [/second/editSecond]}: editFirst(SecondTitle,HttpServletRequest)
+2021-06-05 21:19:31.255 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-06-05 21:19:31.263 [restartedMain-57] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping 57 <init> - Adding welcome page template: index
+2021-06-05 21:19:31.266 [restartedMain-86] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 86 detectHandlers - 'beanNameHandlerMapping' {}
+2021-06-05 21:19:31.269 [restartedMain-177] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 177 logMappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2021-06-05 21:19:31.293 [restartedMain-58] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2021-06-05 21:19:31.300 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Starting ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:19:31.305 [restartedMain-220] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 21:19:31.308 [restartedMain-61] INFO  com.neu.NewsApplication 61 logStarted - Started NewsApplication in 0.637 seconds (JVM running for 116.741)
+2021-06-05 21:19:31.309 [restartedMain-63] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2021-06-05 21:19:31.367 [http-nio-8080-exec-2-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 21:19:31.367 [http-nio-8080-exec-2-525] INFO  org.springframework.web.servlet.DispatcherServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2021-06-05 21:19:31.368 [http-nio-8080-exec-2-547] INFO  org.springframework.web.servlet.DispatcherServlet 547 initServletBean - Completed initialization in 1 ms
+2021-06-05 21:20:19.544 [http-nio-8080-exec-6-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:20:19.544 [http-nio-8080-exec-6-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ca81dd] was not registered for synchronization because synchronization is not active
+2021-06-05 21:20:19.561 [http-nio-8080-exec-6-1066] DEBUG com.zaxxer.hikari.HikariConfig 1066 logConfiguration - HikariPool-2 - configuration:
+2021-06-05 21:20:19.562 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - allowPoolSuspension.............false
+2021-06-05 21:20:19.562 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - autoCommit......................true
+2021-06-05 21:20:19.562 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - catalog.........................none
+2021-06-05 21:20:19.562 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - connectionInitSql...............none
+2021-06-05 21:20:19.562 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - connectionTestQuery.............none
+2021-06-05 21:20:19.562 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - connectionTimeout...............30000
+2021-06-05 21:20:19.562 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - dataSource......................none
+2021-06-05 21:20:19.563 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - dataSourceClassName.............none
+2021-06-05 21:20:19.563 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - dataSourceJNDI..................none
+2021-06-05 21:20:19.563 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - dataSourceProperties............{password=<masked>}
+2021-06-05 21:20:19.563 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - driverClassName................."com.mysql.cj.jdbc.Driver"
+2021-06-05 21:20:19.563 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - exceptionOverrideClassName......none
+2021-06-05 21:20:19.563 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - healthCheckProperties...........{}
+2021-06-05 21:20:19.563 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - healthCheckRegistry.............none
+2021-06-05 21:20:19.564 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - idleTimeout.....................600000
+2021-06-05 21:20:19.564 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - initializationFailTimeout.......1
+2021-06-05 21:20:19.564 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - isolateInternalQueries..........false
+2021-06-05 21:20:19.564 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - jdbcUrl.........................jdbc:mysql://localhost:3306/company?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+2021-06-05 21:20:19.564 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - leakDetectionThreshold..........0
+2021-06-05 21:20:19.564 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - maxLifetime.....................1800000
+2021-06-05 21:20:19.565 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - maximumPoolSize.................10
+2021-06-05 21:20:19.565 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - metricRegistry..................none
+2021-06-05 21:20:19.565 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - metricsTrackerFactory...........none
+2021-06-05 21:20:19.565 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - minimumIdle.....................10
+2021-06-05 21:20:19.565 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - password........................<masked>
+2021-06-05 21:20:19.565 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - poolName........................"HikariPool-2"
+2021-06-05 21:20:19.566 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - readOnly........................false
+2021-06-05 21:20:19.566 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - registerMbeans..................false
+2021-06-05 21:20:19.566 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - scheduledExecutor...............none
+2021-06-05 21:20:19.566 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - schema..........................none
+2021-06-05 21:20:19.566 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - threadFactory...................internal
+2021-06-05 21:20:19.566 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - transactionIsolation............default
+2021-06-05 21:20:19.566 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - username........................"root"
+2021-06-05 21:20:19.567 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - validationTimeout...............5000
+2021-06-05 21:20:19.567 [http-nio-8080-exec-6-110] INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-2 - Starting...
+2021-06-05 21:20:19.587 [http-nio-8080-exec-6-564] DEBUG com.zaxxer.hikari.pool.HikariPool 564 checkFailFast - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6072f3
+2021-06-05 21:20:19.587 [http-nio-8080-exec-6-123] INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-2 - Start completed.
+2021-06-05 21:20:19.588 [http-nio-8080-exec-6-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@18049681 wrapping com.mysql.cj.jdbc.ConnectionImpl@6072f3] will not be managed by Spring
+2021-06-05 21:20:19.588 [http-nio-8080-exec-6-137] DEBUG com.neu.mapper.FirstTitleMapper.update 137 debug - ==>  Preparing: update firsttitle where fid = ?
+2021-06-05 21:20:19.589 [http-nio-8080-exec-6-137] DEBUG com.neu.mapper.FirstTitleMapper.update 137 debug - ==> Parameters: null
+2021-06-05 21:20:19.605 [http-nio-8080-exec-6-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ca81dd]
+2021-06-05 21:20:19.647 [http-nio-8080-exec-6-175] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] 175 log - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where fid = null' at line 3
+### The error may exist in com/neu/mapper/FirstTitleMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update firsttitle                    where fid = ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where fid = null' at line 3
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where fid = null' at line 3] with root cause java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where fid = null' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.25.jar:8.0.25]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_211]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.6.jar:3.5.6]
+	at com.sun.proxy.$Proxy88.execute(Unknown Source) ~[?:?]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.6.jar:3.5.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_211]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.5.6.jar:3.5.6]
+	at com.sun.proxy.$Proxy86.update(Unknown Source) ~[?:?]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.6.jar:3.5.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_211]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	at com.sun.proxy.$Proxy68.update(Unknown Source) ~[?:?]
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85) ~[mybatis-3.5.6.jar:3.5.6]
+	at com.sun.proxy.$Proxy106.update(Unknown Source) ~[?:?]
+	at com.neu.service.FirstTitleServiceImpl.update(FirstTitleServiceImpl.java:53) ~[classes/:?]
+	at com.neu.controller.FirstController.editFirst(FirstController.java:75) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_211]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.46.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.7.jar:5.3.7]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.46.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.7.jar:5.3.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_211]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_211]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_211]
+
+2021-06-05 21:20:19.688 [HikariPool-2 housekeeper-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-2 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2021-06-05 21:20:19.709 [HikariPool-2 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c8ec5c
+2021-06-05 21:20:19.729 [HikariPool-2 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9dd188
+2021-06-05 21:20:19.748 [HikariPool-2 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e5966e
+2021-06-05 21:20:19.766 [HikariPool-2 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e6a1d2
+2021-06-05 21:20:19.785 [HikariPool-2 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ab0f32
+2021-06-05 21:20:19.805 [HikariPool-2 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13cabe4
+2021-06-05 21:20:19.822 [HikariPool-2 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b9fee7
+2021-06-05 21:20:19.837 [HikariPool-2 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@144a13b
+2021-06-05 21:20:19.852 [HikariPool-2 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@135cb3e
+2021-06-05 21:20:19.852 [HikariPool-2 connection adder-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-2 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2021-06-05 21:20:36.446 [http-nio-8080-exec-7-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:20:36.447 [http-nio-8080-exec-7-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e9d927] was not registered for synchronization because synchronization is not active
+2021-06-05 21:20:36.450 [http-nio-8080-exec-7-60] DEBUG SQL_CACHE 60 getObject - Cache Hit Ratio [SQL_CACHE]: 0.0
+2021-06-05 21:20:36.476 [http-nio-8080-exec-7-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@8187729 wrapping com.mysql.cj.jdbc.ConnectionImpl@6072f3] will not be managed by Spring
+2021-06-05 21:20:36.476 [http-nio-8080-exec-7-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==>  Preparing: SELECT count(0) FROM firstTitle
+2021-06-05 21:20:36.476 [http-nio-8080-exec-7-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==> Parameters: 
+2021-06-05 21:20:36.479 [http-nio-8080-exec-7-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - <==      Total: 1
+2021-06-05 21:20:36.481 [http-nio-8080-exec-7-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==>  Preparing: select * from firstTitle LIMIT ?
+2021-06-05 21:20:36.481 [http-nio-8080-exec-7-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==> Parameters: 10(Integer)
+2021-06-05 21:20:36.483 [http-nio-8080-exec-7-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - <==      Total: 10
+2021-06-05 21:20:36.483 [http-nio-8080-exec-7-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e9d927]
+2021-06-05 21:20:49.690 [HikariPool-2 housekeeper-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-06-05 21:20:49.690 [HikariPool-2 housekeeper-517] DEBUG com.zaxxer.hikari.pool.HikariPool 517 fillPool - HikariPool-2 - Fill pool skipped, pool is at sufficient level.
+2021-06-05 21:21:11.487 [http-nio-8080-exec-9-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:21:11.488 [http-nio-8080-exec-9-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1139f8b] was not registered for synchronization because synchronization is not active
+2021-06-05 21:21:11.488 [http-nio-8080-exec-9-60] DEBUG SQL_CACHE 60 getObject - Cache Hit Ratio [SQL_CACHE]: 0.5
+2021-06-05 21:21:11.490 [http-nio-8080-exec-9-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@30698393 wrapping com.mysql.cj.jdbc.ConnectionImpl@6072f3] will not be managed by Spring
+2021-06-05 21:21:11.490 [http-nio-8080-exec-9-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==>  Preparing: SELECT count(0) FROM firstTitle
+2021-06-05 21:21:11.490 [http-nio-8080-exec-9-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==> Parameters: 
+2021-06-05 21:21:11.492 [http-nio-8080-exec-9-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - <==      Total: 1
+2021-06-05 21:21:11.493 [http-nio-8080-exec-9-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==>  Preparing: select * from firstTitle LIMIT ?
+2021-06-05 21:21:11.493 [http-nio-8080-exec-9-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==> Parameters: 10(Integer)
+2021-06-05 21:21:11.497 [http-nio-8080-exec-9-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - <==      Total: 10
+2021-06-05 21:21:11.498 [http-nio-8080-exec-9-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1139f8b]
+2021-06-05 21:21:11.602 [Thread-34-350] INFO  com.zaxxer.hikari.HikariDataSource 350 close - HikariPool-2 - Shutdown initiated...
+2021-06-05 21:21:11.603 [Thread-34-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-2 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2021-06-05 21:21:11.603 [HikariPool-2 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6072f3: (connection evicted)
+2021-06-05 21:21:11.604 [HikariPool-2 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@c8ec5c: (connection evicted)
+2021-06-05 21:21:11.604 [HikariPool-2 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@9dd188: (connection evicted)
+2021-06-05 21:21:11.605 [HikariPool-2 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1e5966e: (connection evicted)
+2021-06-05 21:21:11.605 [HikariPool-2 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@e6a1d2: (connection evicted)
+2021-06-05 21:21:11.606 [HikariPool-2 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1ab0f32: (connection evicted)
+2021-06-05 21:21:11.607 [HikariPool-2 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@13cabe4: (connection evicted)
+2021-06-05 21:21:11.607 [HikariPool-2 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@b9fee7: (connection evicted)
+2021-06-05 21:21:11.608 [HikariPool-2 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@144a13b: (connection evicted)
+2021-06-05 21:21:11.608 [HikariPool-2 connection closer-134] DEBUG com.zaxxer.hikari.pool.PoolBase 134 quietlyCloseConnection - HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@135cb3e: (connection evicted)
+2021-06-05 21:21:11.609 [Thread-34-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-2 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2021-06-05 21:21:11.609 [Thread-34-352] INFO  com.zaxxer.hikari.HikariDataSource 352 close - HikariPool-2 - Shutdown completed.
+2021-06-05 21:21:11.778 [restartedMain-55] INFO  com.neu.NewsApplication 55 logStarting - Starting NewsApplication using Java 1.8.0_211 on LAPTOP-ETLOCT3V with PID 18836 (C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes started by ACER in C:\Users\ACER\Desktop\NEUSoft\homework\news)
+2021-06-05 21:21:11.779 [restartedMain-56] DEBUG com.neu.NewsApplication 56 logStarting - Running with Spring Boot v2.4.6, Spring v5.3.7
+2021-06-05 21:21:11.780 [restartedMain-664] INFO  com.neu.NewsApplication 664 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2021-06-05 21:21:12.031 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\FirstTitleMapper.class]
+2021-06-05 21:21:12.032 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\SecondMapper.class]
+2021-06-05 21:21:12.032 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\UsersMapper.class]
+2021-06-05 21:21:12.032 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'firstTitleMapper' and 'com.neu.mapper.FirstTitleMapper' mapperInterface
+2021-06-05 21:21:12.032 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'firstTitleMapper'.
+2021-06-05 21:21:12.032 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'secondMapper' and 'com.neu.mapper.SecondMapper' mapperInterface
+2021-06-05 21:21:12.032 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'secondMapper'.
+2021-06-05 21:21:12.033 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'usersMapper' and 'com.neu.mapper.UsersMapper' mapperInterface
+2021-06-05 21:21:12.033 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
+2021-06-05 21:21:12.178 [restartedMain-108] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8080 (http)
+2021-06-05 21:21:12.179 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:21:12.179 [restartedMain-173] INFO  org.apache.catalina.core.StandardService 173 log - Starting service [Tomcat]
+2021-06-05 21:21:12.179 [restartedMain-173] INFO  org.apache.catalina.core.StandardEngine 173 log - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-05 21:21:12.307 [restartedMain-173] INFO  org.apache.jasper.servlet.TldScanner 173 log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-05 21:21:12.310 [restartedMain-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring embedded WebApplicationContext
+2021-06-05 21:21:12.310 [restartedMain-289] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 526 ms
+2021-06-05 21:21:12.329 [restartedMain-946] DEBUG com.zaxxer.hikari.HikariConfig 946 attemptFromContextLoader - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5d061a
+2021-06-05 21:21:12.348 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-06-05 21:21:12.349 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Registered plugin: 'com.github.pagehelper.PageInterceptor@721972'
+2021-06-05 21:21:12.349 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'mapperLocations' was not specified.
+2021-06-05 21:21:12.443 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.AdminController:
+	{ [/admin/login]}: login(String,String,HttpSession,HttpServletResponse)
+	{ [/admin/welcome]}: welcome()
+	{ [/admin/admin]}: admin()
+	{ [/admin/]}: loginMain()
+2021-06-05 21:21:12.445 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.FirstController:
+	{ [/first/add]}: add()
+	{ [/first/update]}: update(String,Model)
+	{ [/first/delete]}: delete(String)
+	{ [/first/insert]}: insert(FirstTitle)
+	{ [/first/firstList]}: getPaged(int,int,Model)
+	{ [/first/editFirst]}: editFirst(FirstTitle)
+2021-06-05 21:21:12.446 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.NewsController:
+	{ [/getSecond]}: getSecond(String,Model)
+	{ [/]}: newsMain(Model)
+	{ [/news]}: news(String,Model)
+2021-06-05 21:21:12.447 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.SecondController:
+	{ [/second/update]}: update(String,Model)
+	{ [/second/delete]}: delete(String)
+	{ [/second/insert]}: insert(HttpServletRequest,SecondTitle)
+	{ [/second/addSecond]}: addSecond(Model)
+	{ [/second/secondList]}: secondList(int,int,Model)
+	{ [/second/editSecond]}: editFirst(SecondTitle,HttpServletRequest)
+2021-06-05 21:21:12.448 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-06-05 21:21:12.457 [restartedMain-57] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping 57 <init> - Adding welcome page template: index
+2021-06-05 21:21:12.461 [restartedMain-86] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 86 detectHandlers - 'beanNameHandlerMapping' {}
+2021-06-05 21:21:12.466 [restartedMain-177] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 177 logMappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2021-06-05 21:21:12.501 [restartedMain-58] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2021-06-05 21:21:12.517 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Starting ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:21:12.522 [restartedMain-220] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 21:21:12.526 [restartedMain-61] INFO  com.neu.NewsApplication 61 logStarted - Started NewsApplication in 0.842 seconds (JVM running for 217.958)
+2021-06-05 21:21:12.527 [restartedMain-63] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2021-06-05 21:21:12.600 [http-nio-8080-exec-1-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 21:21:12.600 [http-nio-8080-exec-1-525] INFO  org.springframework.web.servlet.DispatcherServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2021-06-05 21:21:12.601 [http-nio-8080-exec-1-547] INFO  org.springframework.web.servlet.DispatcherServlet 547 initServletBean - Completed initialization in 1 ms
+2021-06-05 21:21:15.107 [restartedMain-55] INFO  com.neu.NewsApplication 55 logStarting - Starting NewsApplication using Java 1.8.0_211 on LAPTOP-ETLOCT3V with PID 18836 (C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes started by ACER in C:\Users\ACER\Desktop\NEUSoft\homework\news)
+2021-06-05 21:21:15.109 [restartedMain-56] DEBUG com.neu.NewsApplication 56 logStarting - Running with Spring Boot v2.4.6, Spring v5.3.7
+2021-06-05 21:21:15.109 [restartedMain-664] INFO  com.neu.NewsApplication 664 logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2021-06-05 21:21:15.356 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\FirstTitleMapper.class]
+2021-06-05 21:21:15.356 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\SecondMapper.class]
+2021-06-05 21:21:15.357 [restartedMain-435] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 435 scanCandidateComponents - Identified candidate component class: file [C:\Users\ACER\Desktop\NEUSoft\homework\news\target\classes\com\neu\mapper\UsersMapper.class]
+2021-06-05 21:21:15.357 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'firstTitleMapper' and 'com.neu.mapper.FirstTitleMapper' mapperInterface
+2021-06-05 21:21:15.357 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'firstTitleMapper'.
+2021-06-05 21:21:15.357 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'secondMapper' and 'com.neu.mapper.SecondMapper' mapperInterface
+2021-06-05 21:21:15.357 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'secondMapper'.
+2021-06-05 21:21:15.357 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Creating MapperFactoryBean with name 'usersMapper' and 'com.neu.mapper.UsersMapper' mapperInterface
+2021-06-05 21:21:15.357 [restartedMain-49] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner 49 debug - Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
+2021-06-05 21:21:15.449 [restartedMain-108] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 108 initialize - Tomcat initialized with port(s): 8080 (http)
+2021-06-05 21:21:15.450 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Initializing ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:21:15.450 [restartedMain-173] INFO  org.apache.catalina.core.StandardService 173 log - Starting service [Tomcat]
+2021-06-05 21:21:15.450 [restartedMain-173] INFO  org.apache.catalina.core.StandardEngine 173 log - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-05 21:21:15.567 [restartedMain-173] INFO  org.apache.jasper.servlet.TldScanner 173 log - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-06-05 21:21:15.570 [restartedMain-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring embedded WebApplicationContext
+2021-06-05 21:21:15.570 [restartedMain-289] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 289 prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 456 ms
+2021-06-05 21:21:15.589 [restartedMain-946] DEBUG com.zaxxer.hikari.HikariConfig 946 attemptFromContextLoader - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@14be495
+2021-06-05 21:21:15.602 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2021-06-05 21:21:15.603 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Registered plugin: 'com.github.pagehelper.PageInterceptor@1f79d02'
+2021-06-05 21:21:15.603 [restartedMain-49] DEBUG org.mybatis.spring.SqlSessionFactoryBean 49 debug - Property 'mapperLocations' was not specified.
+2021-06-05 21:21:15.685 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.AdminController:
+	{ [/admin/login]}: login(String,String,HttpSession,HttpServletResponse)
+	{ [/admin/welcome]}: welcome()
+	{ [/admin/admin]}: admin()
+	{ [/admin/]}: loginMain()
+2021-06-05 21:21:15.686 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.FirstController:
+	{ [/first/add]}: add()
+	{ [/first/update]}: update(String,Model)
+	{ [/first/delete]}: delete(String)
+	{ [/first/insert]}: insert(FirstTitle)
+	{ [/first/firstList]}: getPaged(int,int,Model)
+	{ [/first/editFirst]}: editFirst(FirstTitle)
+2021-06-05 21:21:15.687 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.NewsController:
+	{ [/getSecond]}: getSecond(String,Model)
+	{ [/]}: newsMain(Model)
+	{ [/news]}: news(String,Model)
+2021-06-05 21:21:15.688 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	c.n.c.SecondController:
+	{ [/second/update]}: update(String,Model)
+	{ [/second/delete]}: delete(String)
+	{ [/second/insert]}: insert(HttpServletRequest,SecondTitle)
+	{ [/second/addSecond]}: addSecond(Model)
+	{ [/second/secondList]}: secondList(int,int,Model)
+	{ [/second/editSecond]}: editFirst(SecondTitle,HttpServletRequest)
+2021-06-05 21:21:15.689 [restartedMain-294] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 294 detectHandlerMethods - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2021-06-05 21:21:15.698 [restartedMain-57] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping 57 <init> - Adding welcome page template: index
+2021-06-05 21:21:15.702 [restartedMain-86] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 86 detectHandlers - 'beanNameHandlerMapping' {}
+2021-06-05 21:21:15.705 [restartedMain-177] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 177 logMappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [Classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]}
+2021-06-05 21:21:15.733 [restartedMain-58] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer 58 startServer - LiveReload server is running on port 35729
+2021-06-05 21:21:15.741 [restartedMain-173] INFO  org.apache.coyote.http11.Http11NioProtocol 173 log - Starting ProtocolHandler ["http-nio-8080"]
+2021-06-05 21:21:15.746 [restartedMain-220] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer 220 start - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 21:21:15.749 [restartedMain-61] INFO  com.neu.NewsApplication 61 logStarted - Started NewsApplication in 0.717 seconds (JVM running for 221.182)
+2021-06-05 21:21:15.751 [restartedMain-63] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener 63 onApplicationEvent - Condition evaluation unchanged
+2021-06-05 21:21:15.814 [http-nio-8080-exec-1-173] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 173 log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 21:21:15.814 [http-nio-8080-exec-1-525] INFO  org.springframework.web.servlet.DispatcherServlet 525 initServletBean - Initializing Servlet 'dispatcherServlet'
+2021-06-05 21:21:15.815 [http-nio-8080-exec-1-547] INFO  org.springframework.web.servlet.DispatcherServlet 547 initServletBean - Completed initialization in 1 ms
+2021-06-05 21:21:22.630 [http-nio-8080-exec-6-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:21:22.631 [http-nio-8080-exec-6-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eb29a5] was not registered for synchronization because synchronization is not active
+2021-06-05 21:21:22.633 [http-nio-8080-exec-6-1066] DEBUG com.zaxxer.hikari.HikariConfig 1066 logConfiguration - HikariPool-3 - configuration:
+2021-06-05 21:21:22.635 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - allowPoolSuspension.............false
+2021-06-05 21:21:22.635 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - autoCommit......................true
+2021-06-05 21:21:22.636 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - catalog.........................none
+2021-06-05 21:21:22.636 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - connectionInitSql...............none
+2021-06-05 21:21:22.636 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - connectionTestQuery.............none
+2021-06-05 21:21:22.636 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - connectionTimeout...............30000
+2021-06-05 21:21:22.637 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - dataSource......................none
+2021-06-05 21:21:22.637 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - dataSourceClassName.............none
+2021-06-05 21:21:22.637 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - dataSourceJNDI..................none
+2021-06-05 21:21:22.637 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - dataSourceProperties............{password=<masked>}
+2021-06-05 21:21:22.637 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - driverClassName................."com.mysql.cj.jdbc.Driver"
+2021-06-05 21:21:22.637 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - exceptionOverrideClassName......none
+2021-06-05 21:21:22.638 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - healthCheckProperties...........{}
+2021-06-05 21:21:22.638 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - healthCheckRegistry.............none
+2021-06-05 21:21:22.638 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - idleTimeout.....................600000
+2021-06-05 21:21:22.638 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - initializationFailTimeout.......1
+2021-06-05 21:21:22.638 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - isolateInternalQueries..........false
+2021-06-05 21:21:22.639 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - jdbcUrl.........................jdbc:mysql://localhost:3306/company?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+2021-06-05 21:21:22.639 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - leakDetectionThreshold..........0
+2021-06-05 21:21:22.639 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - maxLifetime.....................1800000
+2021-06-05 21:21:22.639 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - maximumPoolSize.................10
+2021-06-05 21:21:22.639 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - metricRegistry..................none
+2021-06-05 21:21:22.639 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - metricsTrackerFactory...........none
+2021-06-05 21:21:22.640 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - minimumIdle.....................10
+2021-06-05 21:21:22.640 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - password........................<masked>
+2021-06-05 21:21:22.640 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - poolName........................"HikariPool-3"
+2021-06-05 21:21:22.640 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - readOnly........................false
+2021-06-05 21:21:22.640 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - registerMbeans..................false
+2021-06-05 21:21:22.640 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - scheduledExecutor...............none
+2021-06-05 21:21:22.641 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - schema..........................none
+2021-06-05 21:21:22.641 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - threadFactory...................internal
+2021-06-05 21:21:22.641 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - transactionIsolation............default
+2021-06-05 21:21:22.641 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - username........................"root"
+2021-06-05 21:21:22.641 [http-nio-8080-exec-6-1098] DEBUG com.zaxxer.hikari.HikariConfig 1098 logConfiguration - validationTimeout...............5000
+2021-06-05 21:21:22.641 [http-nio-8080-exec-6-110] INFO  com.zaxxer.hikari.HikariDataSource 110 getConnection - HikariPool-3 - Starting...
+2021-06-05 21:21:22.664 [http-nio-8080-exec-6-564] DEBUG com.zaxxer.hikari.pool.HikariPool 564 checkFailFast - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13e343c
+2021-06-05 21:21:22.664 [http-nio-8080-exec-6-123] INFO  com.zaxxer.hikari.HikariDataSource 123 getConnection - HikariPool-3 - Start completed.
+2021-06-05 21:21:22.665 [http-nio-8080-exec-6-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@3975973 wrapping com.mysql.cj.jdbc.ConnectionImpl@13e343c] will not be managed by Spring
+2021-06-05 21:21:22.665 [http-nio-8080-exec-6-137] DEBUG com.neu.mapper.UsersMapper.getUser 137 debug - ==>  Preparing: select * from users where userName = ? and password = ?
+2021-06-05 21:21:22.665 [http-nio-8080-exec-6-137] DEBUG com.neu.mapper.UsersMapper.getUser 137 debug - ==> Parameters: test(String), 111(String)
+2021-06-05 21:21:22.668 [http-nio-8080-exec-6-137] DEBUG com.neu.mapper.UsersMapper.getUser 137 debug - <==      Total: 1
+2021-06-05 21:21:22.669 [http-nio-8080-exec-6-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eb29a5]
+2021-06-05 21:21:22.766 [HikariPool-3 housekeeper-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-3 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2021-06-05 21:21:22.786 [HikariPool-3 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fa034e
+2021-06-05 21:21:22.803 [HikariPool-3 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18036b1
+2021-06-05 21:21:22.818 [HikariPool-3 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d77c9a
+2021-06-05 21:21:22.842 [HikariPool-3 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b2635d
+2021-06-05 21:21:22.866 [HikariPool-3 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@99c2ec
+2021-06-05 21:21:22.882 [HikariPool-3 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ec7fe9
+2021-06-05 21:21:22.898 [HikariPool-3 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@154f7f5
+2021-06-05 21:21:22.918 [HikariPool-3 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8e9903
+2021-06-05 21:21:22.934 [HikariPool-3 connection adder-728] DEBUG com.zaxxer.hikari.pool.HikariPool 728 call - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@789344
+2021-06-05 21:21:22.934 [HikariPool-3 connection adder-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-3 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2021-06-05 21:21:32.973 [http-nio-8080-exec-2-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:21:32.973 [http-nio-8080-exec-2-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19ba78b] was not registered for synchronization because synchronization is not active
+2021-06-05 21:21:32.974 [http-nio-8080-exec-2-60] DEBUG SQL_CACHE 60 getObject - Cache Hit Ratio [SQL_CACHE]: 0.0
+2021-06-05 21:21:32.974 [http-nio-8080-exec-2-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@31501804 wrapping com.mysql.cj.jdbc.ConnectionImpl@13e343c] will not be managed by Spring
+2021-06-05 21:21:32.974 [http-nio-8080-exec-2-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==>  Preparing: SELECT count(0) FROM firstTitle
+2021-06-05 21:21:32.975 [http-nio-8080-exec-2-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==> Parameters: 
+2021-06-05 21:21:32.977 [http-nio-8080-exec-2-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - <==      Total: 1
+2021-06-05 21:21:32.977 [http-nio-8080-exec-2-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==>  Preparing: select * from firstTitle LIMIT ?
+2021-06-05 21:21:32.977 [http-nio-8080-exec-2-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==> Parameters: 10(Integer)
+2021-06-05 21:21:32.979 [http-nio-8080-exec-2-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - <==      Total: 10
+2021-06-05 21:21:32.980 [http-nio-8080-exec-2-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19ba78b]
+2021-06-05 21:21:33.407 [http-nio-8080-exec-4-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:21:33.408 [http-nio-8080-exec-4-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18bfd34] was not registered for synchronization because synchronization is not active
+2021-06-05 21:21:33.408 [http-nio-8080-exec-4-60] DEBUG SQL_CACHE 60 getObject - Cache Hit Ratio [SQL_CACHE]: 0.5
+2021-06-05 21:21:33.409 [http-nio-8080-exec-4-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@8430111 wrapping com.mysql.cj.jdbc.ConnectionImpl@13e343c] will not be managed by Spring
+2021-06-05 21:21:33.409 [http-nio-8080-exec-4-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==>  Preparing: SELECT count(0) FROM firstTitle
+2021-06-05 21:21:33.409 [http-nio-8080-exec-4-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==> Parameters: 
+2021-06-05 21:21:33.412 [http-nio-8080-exec-4-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - <==      Total: 1
+2021-06-05 21:21:33.412 [http-nio-8080-exec-4-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==>  Preparing: select * from firstTitle LIMIT ?
+2021-06-05 21:21:33.412 [http-nio-8080-exec-4-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==> Parameters: 10(Integer)
+2021-06-05 21:21:33.415 [http-nio-8080-exec-4-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - <==      Total: 10
+2021-06-05 21:21:33.415 [http-nio-8080-exec-4-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18bfd34]
+2021-06-05 21:21:33.968 [http-nio-8080-exec-6-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:21:33.968 [http-nio-8080-exec-6-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@186d386] was not registered for synchronization because synchronization is not active
+2021-06-05 21:21:33.969 [http-nio-8080-exec-6-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@2389756 wrapping com.mysql.cj.jdbc.ConnectionImpl@13e343c] will not be managed by Spring
+2021-06-05 21:21:33.969 [http-nio-8080-exec-6-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==>  Preparing: select * from firstTitle
+2021-06-05 21:21:33.969 [http-nio-8080-exec-6-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==> Parameters: 
+2021-06-05 21:21:33.971 [http-nio-8080-exec-6-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - <==      Total: 11
+2021-06-05 21:21:33.971 [http-nio-8080-exec-6-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@186d386]
+2021-06-05 21:21:34.746 [http-nio-8080-exec-8-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:21:34.746 [http-nio-8080-exec-8-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c76c2] was not registered for synchronization because synchronization is not active
+2021-06-05 21:21:34.746 [http-nio-8080-exec-8-60] DEBUG SQL_CACHE 60 getObject - Cache Hit Ratio [SQL_CACHE]: 0.3333333333333333
+2021-06-05 21:21:34.747 [http-nio-8080-exec-8-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@3403099 wrapping com.mysql.cj.jdbc.ConnectionImpl@13e343c] will not be managed by Spring
+2021-06-05 21:21:34.747 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.SecondMapper.getAll_COUNT 137 debug - ==>  Preparing: SELECT count(0) FROM secondtitle
+2021-06-05 21:21:34.748 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.SecondMapper.getAll_COUNT 137 debug - ==> Parameters: 
+2021-06-05 21:21:34.753 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.SecondMapper.getAll_COUNT 137 debug - <==      Total: 1
+2021-06-05 21:21:34.753 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.SecondMapper.getAll 137 debug - ==>  Preparing: select * from secondtitle LIMIT ?
+2021-06-05 21:21:34.753 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.SecondMapper.getAll 137 debug - ==> Parameters: 10(Integer)
+2021-06-05 21:21:34.756 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.FirstTitleMapper.getById 137 debug - ====>  Preparing: select * from firsttitle where fid=?
+2021-06-05 21:21:34.757 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.FirstTitleMapper.getById 137 debug - ====> Parameters: 1(Integer)
+2021-06-05 21:21:34.758 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.FirstTitleMapper.getById 137 debug - <====      Total: 1
+2021-06-05 21:21:34.759 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.FirstTitleMapper.getById 137 debug - ====>  Preparing: select * from firsttitle where fid=?
+2021-06-05 21:21:34.759 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.FirstTitleMapper.getById 137 debug - ====> Parameters: 2(Integer)
+2021-06-05 21:21:34.760 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.FirstTitleMapper.getById 137 debug - <====      Total: 1
+2021-06-05 21:21:34.761 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.FirstTitleMapper.getById 137 debug - ====>  Preparing: select * from firsttitle where fid=?
+2021-06-05 21:21:34.761 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.FirstTitleMapper.getById 137 debug - ====> Parameters: 36(Integer)
+2021-06-05 21:21:34.762 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.FirstTitleMapper.getById 137 debug - <====      Total: 1
+2021-06-05 21:21:34.763 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.FirstTitleMapper.getById 137 debug - ====>  Preparing: select * from firsttitle where fid=?
+2021-06-05 21:21:34.763 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.FirstTitleMapper.getById 137 debug - ====> Parameters: 33(Integer)
+2021-06-05 21:21:34.764 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.FirstTitleMapper.getById 137 debug - <====      Total: 1
+2021-06-05 21:21:34.765 [http-nio-8080-exec-8-137] DEBUG com.neu.mapper.SecondMapper.getAll 137 debug - <==      Total: 10
+2021-06-05 21:21:34.765 [http-nio-8080-exec-8-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c76c2]
+2021-06-05 21:21:35.959 [http-nio-8080-exec-10-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:21:35.959 [http-nio-8080-exec-10-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ca17ee] was not registered for synchronization because synchronization is not active
+2021-06-05 21:21:35.959 [http-nio-8080-exec-10-60] DEBUG SQL_CACHE 60 getObject - Cache Hit Ratio [SQL_CACHE]: 0.5
+2021-06-05 21:21:35.961 [http-nio-8080-exec-10-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@4761210 wrapping com.mysql.cj.jdbc.ConnectionImpl@13e343c] will not be managed by Spring
+2021-06-05 21:21:35.961 [http-nio-8080-exec-10-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==>  Preparing: SELECT count(0) FROM firstTitle
+2021-06-05 21:21:35.961 [http-nio-8080-exec-10-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==> Parameters: 
+2021-06-05 21:21:35.963 [http-nio-8080-exec-10-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - <==      Total: 1
+2021-06-05 21:21:35.963 [http-nio-8080-exec-10-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==>  Preparing: select * from firstTitle LIMIT ?
+2021-06-05 21:21:35.964 [http-nio-8080-exec-10-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==> Parameters: 10(Integer)
+2021-06-05 21:21:35.965 [http-nio-8080-exec-10-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - <==      Total: 10
+2021-06-05 21:21:35.966 [http-nio-8080-exec-10-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ca17ee]
+2021-06-05 21:21:40.836 [http-nio-8080-exec-4-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:21:40.836 [http-nio-8080-exec-4-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f719b9] was not registered for synchronization because synchronization is not active
+2021-06-05 21:21:40.837 [http-nio-8080-exec-4-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@10606163 wrapping com.mysql.cj.jdbc.ConnectionImpl@13e343c] will not be managed by Spring
+2021-06-05 21:21:40.838 [http-nio-8080-exec-4-137] DEBUG com.neu.mapper.FirstTitleMapper.insert 137 debug - ==>  Preparing: insert into firsttitle ( titleName, creator, createTime ) values ( ?, ?, ? )
+2021-06-05 21:21:40.838 [http-nio-8080-exec-4-137] DEBUG com.neu.mapper.FirstTitleMapper.insert 137 debug - ==> Parameters: 1(String), 管理员(String), 2021-06-05(String)
+2021-06-05 21:21:40.841 [http-nio-8080-exec-4-137] DEBUG com.neu.mapper.FirstTitleMapper.insert 137 debug - <==    Updates: 1
+2021-06-05 21:21:40.841 [http-nio-8080-exec-4-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f719b9]
+2021-06-05 21:21:42.930 [http-nio-8080-exec-7-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:21:42.930 [http-nio-8080-exec-7-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71e889] was not registered for synchronization because synchronization is not active
+2021-06-05 21:21:42.930 [http-nio-8080-exec-7-60] DEBUG SQL_CACHE 60 getObject - Cache Hit Ratio [SQL_CACHE]: 0.6
+2021-06-05 21:21:42.931 [http-nio-8080-exec-7-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@27155519 wrapping com.mysql.cj.jdbc.ConnectionImpl@13e343c] will not be managed by Spring
+2021-06-05 21:21:42.932 [http-nio-8080-exec-7-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==>  Preparing: SELECT count(0) FROM firstTitle
+2021-06-05 21:21:42.932 [http-nio-8080-exec-7-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==> Parameters: 
+2021-06-05 21:21:42.934 [http-nio-8080-exec-7-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - <==      Total: 1
+2021-06-05 21:21:42.934 [http-nio-8080-exec-7-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==>  Preparing: select * from firstTitle LIMIT ?
+2021-06-05 21:21:42.935 [http-nio-8080-exec-7-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==> Parameters: 10(Integer)
+2021-06-05 21:21:42.937 [http-nio-8080-exec-7-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - <==      Total: 10
+2021-06-05 21:21:42.937 [http-nio-8080-exec-7-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71e889]
+2021-06-05 21:21:44.954 [http-nio-8080-exec-9-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:21:44.955 [http-nio-8080-exec-9-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1bfdb3d] was not registered for synchronization because synchronization is not active
+2021-06-05 21:21:44.955 [http-nio-8080-exec-9-60] DEBUG SQL_CACHE 60 getObject - Cache Hit Ratio [SQL_CACHE]: 0.6666666666666666
+2021-06-05 21:21:44.956 [http-nio-8080-exec-9-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@8263294 wrapping com.mysql.cj.jdbc.ConnectionImpl@13e343c] will not be managed by Spring
+2021-06-05 21:21:44.956 [http-nio-8080-exec-9-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==>  Preparing: SELECT count(0) FROM firstTitle
+2021-06-05 21:21:44.956 [http-nio-8080-exec-9-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==> Parameters: 
+2021-06-05 21:21:44.958 [http-nio-8080-exec-9-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - <==      Total: 1
+2021-06-05 21:21:44.959 [http-nio-8080-exec-9-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==>  Preparing: select * from firstTitle LIMIT ?, ?
+2021-06-05 21:21:44.959 [http-nio-8080-exec-9-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==> Parameters: 10(Integer), 10(Integer)
+2021-06-05 21:21:44.961 [http-nio-8080-exec-9-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - <==      Total: 2
+2021-06-05 21:21:44.961 [http-nio-8080-exec-9-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1bfdb3d]
+2021-06-05 21:21:46.267 [http-nio-8080-exec-1-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:21:46.267 [http-nio-8080-exec-1-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c3d2ce] was not registered for synchronization because synchronization is not active
+2021-06-05 21:21:46.268 [http-nio-8080-exec-1-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@278118 wrapping com.mysql.cj.jdbc.ConnectionImpl@13e343c] will not be managed by Spring
+2021-06-05 21:21:46.268 [http-nio-8080-exec-1-137] DEBUG com.neu.mapper.FirstTitleMapper.delete 137 debug - ==>  Preparing: delete from firsttitle where fid = ?
+2021-06-05 21:21:46.269 [http-nio-8080-exec-1-137] DEBUG com.neu.mapper.FirstTitleMapper.delete 137 debug - ==> Parameters: 39(Integer)
+2021-06-05 21:21:46.271 [http-nio-8080-exec-1-137] DEBUG com.neu.mapper.FirstTitleMapper.delete 137 debug - <==    Updates: 1
+2021-06-05 21:21:46.272 [http-nio-8080-exec-1-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c3d2ce]
+2021-06-05 21:21:46.275 [http-nio-8080-exec-2-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Creating a new SqlSession
+2021-06-05 21:21:46.276 [http-nio-8080-exec-2-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18cf3a4] was not registered for synchronization because synchronization is not active
+2021-06-05 21:21:46.276 [http-nio-8080-exec-2-60] DEBUG SQL_CACHE 60 getObject - Cache Hit Ratio [SQL_CACHE]: 0.7142857142857143
+2021-06-05 21:21:46.277 [http-nio-8080-exec-2-49] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction 49 debug - JDBC Connection [HikariProxyConnection@7493457 wrapping com.mysql.cj.jdbc.ConnectionImpl@13e343c] will not be managed by Spring
+2021-06-05 21:21:46.277 [http-nio-8080-exec-2-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==>  Preparing: SELECT count(0) FROM firstTitle
+2021-06-05 21:21:46.277 [http-nio-8080-exec-2-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - ==> Parameters: 
+2021-06-05 21:21:46.279 [http-nio-8080-exec-2-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll_COUNT 137 debug - <==      Total: 1
+2021-06-05 21:21:46.279 [http-nio-8080-exec-2-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==>  Preparing: select * from firstTitle LIMIT ?
+2021-06-05 21:21:46.280 [http-nio-8080-exec-2-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - ==> Parameters: 10(Integer)
+2021-06-05 21:21:46.281 [http-nio-8080-exec-2-137] DEBUG com.neu.mapper.FirstTitleMapper.getAll 137 debug - <==      Total: 10
+2021-06-05 21:21:46.281 [http-nio-8080-exec-2-49] DEBUG org.mybatis.spring.SqlSessionUtils 49 debug - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18cf3a4]
+2021-06-05 21:21:52.767 [HikariPool-3 housekeeper-421] DEBUG com.zaxxer.hikari.pool.HikariPool 421 logPoolState - HikariPool-3 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2021-06-05 21:21:52.767 [HikariPool-3 housekeeper-517] DEBUG com.zaxxer.hikari.pool.HikariPool 517 fillPool - HikariPool-3 - Fill pool skipped, pool is at sufficient level.

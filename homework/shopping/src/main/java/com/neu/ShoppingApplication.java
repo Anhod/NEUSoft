@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @MapperScan(basePackages = {"com.neu.mapper"})   // mapper扫描
 
-public class Springboot1Application {
+public class ShoppingApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Springboot1Application.class, args);
+        SpringApplication.run(ShoppingApplication.class, args);
     }
 
 }

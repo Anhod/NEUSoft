@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neu.mapper.SecondMapper">
+    <select id="getByFid" resultType="com.neu.po.SecondTitle">
+        select *
+        from secondTitle
+        where parentTitleId = ${parentTitleId}
+    </select>
+
+    <select id="getById" resultType="com.neu.po.SecondTitle">
+        select *
+        from secondTitle
+        where sid = ${sid}
+    </select>
+
+    <!--    在根据一级id查出一级新闻对象-->
+    <resultMap id="basicMap" type="com.neu.po.SecondTitle">
+        <id property="parentTitleId" column="fid"></id>
+        <association property="firstTitle" column="parentTitleId" select="com.neu.mapper.FirstTitleMapper.getById">
+        </association>
+    </resultMap>
+    <select id="getAll" resultMap="basicMap">
+        select *
+        from secondtitle
+    </select>
+
+    <insert id="insert">
+        insert into secondtitle
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="sid!=null">
+                sid,
+            </if>
+            <if test="titleName!=null">
+                titleName,
+            </if>
+            <if test="newContent!=null">
+                newContent,
+            </if>
+            <if test="creator!=null">
+                creator,
+            </if>
+            <if test="createTime!=null">
+                createTime,
+            </if>
+            <if test="parentTitleId!=null">
+                parentTitleId,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="sid!=null">
+                #{sid},
+            </if>
+            <if test="titleName!=null">
+                #{titleName},
+            </if>
+            <if test="newContent!=null">
+                #{newContent},
+            </if>
+            <if test="creator!=null">
+                #{creator},
+            </if>
+            <if test="createTime!=null">
+                #{createTime},
+            </if>
+            <if test="parentTitleId!=null">
+                #{parentTitleId},
+            </if>
+        </trim>
+    </insert>
+
+    <delete id="delete">
+        delete
+        from secondtitle
+        where sid = #{sid}
+    </delete>
+
+    <update id="update">
+        update secondtitle
+        <set>
+            <if test="titleName!=null">titleName=#{titleName},</if>
+            <if test="newContent!=null">newContent=#{newContent},</if>
+            <if test="creator!=null">creator=#{creator},</if>
+            <if test="parentTitleId!=null">parentTitleId=#{parentTitleId}</if>
+        </set>
+        where sid = #{sid}
+    </update>
+</mapper>

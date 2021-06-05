@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neu.mapper.FirstTitleMapper" >
+    <select id="getAll" resultType="com.neu.po.FirstTitle">
+        select * from firstTitle
+    </select>
+
+    <insert id="insert">
+        insert into firsttitle
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="fid!=null">fid,</if>
+            <if test="titleName!=null">titleName,</if>
+            <if test="creator!=null">creator,</if>
+            <if test="createTime!=null">createTime,</if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="fid!=null">#{fid},</if>
+            <if test="titleName!=null">#{titleName},</if>
+            <if test="creator!=null">#{creator},</if>
+            <if test="createTime!=null">#{createTime},</if>
+        </trim>
+    </insert>
+
+    <select id="getById" resultType="com.neu.po.FirstTitle">
+        select * from firsttitle where fid=#{fid}
+    </select>
+
+    <delete id="delete">
+        delete from firsttitle where fid = #{fid}
+    </delete>
+
+    <update id="update">
+        update firsttitle
+        <set>
+            <if test="titleName!=null">titleName=#{titleName},</if>
+            <if test="creator!=null">creator=#{creator},</if>
+        </set>
+        where fid = #{fid}
+    </update>
+</mapper>
